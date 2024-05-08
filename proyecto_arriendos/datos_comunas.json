@@ -1,0 +1,66 @@
+[
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 1,
+        "fields": {
+            "comuna_nombre": "Santiago",
+            "region": 1
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 2,
+        "fields": {
+            "comuna_nombre": "Providencia",
+            "region": 1
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 3,
+        "fields": {
+            "comuna_nombre": "Viña del Mar",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 4,
+        "fields": {
+            "comuna_nombre": "Concepción",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 5,
+        "fields": {
+            "comuna_nombre": "Rancagua",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 6,
+        "fields": {
+            "comuna_nombre": "Curicó",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 7,
+        "fields": {
+            "comuna_nombre": "Antofagasta",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 8,
+        "fields": {
+            "comuna_nombre": "La Serena",
+            "region": 7
+        }
+    }
+]

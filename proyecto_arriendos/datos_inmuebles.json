@@ -1,0 +1,74 @@
+[
+    {
+        "model": "proyecto_arriendos_crud.inmueble",
+        "pk": 1,
+        "fields": {
+            "inmueble_nombre": "Casa de Campo",
+            "descripcion": "Acogedora casa de campo",
+            "m2_construidos": 150,
+            "m2_terreno": 1000,
+            "cantidad_estacionamientos": 2,
+            "cantidad_habitaciones": 3,
+            "cantidad_banios": 2,
+            "direccion": 1,
+            "tipo_inmueble": "casa",
+            "precio_mensual_arriendo": 800000,
+            "usuario_arrendador": 1,
+            "disponibilidad": true
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.inmueble",
+        "pk": 2,
+        "fields": {
+            "inmueble_nombre": "Departamento Centro",
+            "descripcion": "Moderno departamento en el corazón de la ciudad",
+            "m2_construidos": 80,
+            "m2_terreno": 0,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 1,
+            "direccion": 3,
+            "tipo_inmueble": "departamento",
+            "precio_mensual_arriendo": 600000,
+            "usuario_arrendador": 3,
+            "disponibilidad": true
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.inmueble",
+        "pk": 3,
+        "fields": {
+            "inmueble_nombre": "Casa en Condominio",
+            "descripcion": "Amplia casa en condominio cerrado",
+            "m2_construidos": 200,
+            "m2_terreno": 300,
+            "cantidad_estacionamientos": 2,
+            "cantidad_habitaciones": 4,
+            "cantidad_banios": 3,
+            "direccion": 4,
+            "tipo_inmueble": "casa",
+            "precio_mensual_arriendo": 1000000,
+            "usuario_arrendador": 4,
+            "disponibilidad": true
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.inmueble",
+        "pk": 4,
+        "fields": {
+            "inmueble_nombre": "Casa de Playa",
+            "descripcion": "Hermosa casa frente al mar",
+            "m2_construidos": 180,
+            "m2_terreno": 500,
+            "cantidad_estacionamientos": 3,
+            "cantidad_habitaciones": 4,
+            "cantidad_banios": 2,
+            "direccion": 5,
+            "tipo_inmueble": "casa",
+            "precio_mensual_arriendo": 1200000,
+            "usuario_arrendador": 5,
+            "disponibilidad": true
+        }
+    }
+]

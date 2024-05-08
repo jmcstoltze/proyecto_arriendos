@@ -1,0 +1,29 @@
+[
+    {
+        "model": "proyecto_arriendos_crud.solicitud",
+        "pk": 1,
+        "fields": {
+            "usuario_postulante": 2,
+            "inmueble": 1,
+            "estado_solicitud": false
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.solicitud",
+        "pk": 2,
+        "fields": {
+            "usuario_postulante": 4,
+            "inmueble": 2,
+            "estado_solicitud": false
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.solicitud",
+        "pk": 3,
+        "fields": {
+            "usuario_postulante": 3,
+            "inmueble": 4,
+            "estado_solicitud": false
+        }
+    }
+]

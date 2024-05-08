@@ -1,0 +1,52 @@
+[
+    {
+        "model": "proyecto_arriendos_crud.direccion",
+        "pk": 1,
+        "fields": {
+            "calle": "Av. Providencia",
+            "numero": "123",
+            "depto": "",
+            "comuna": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.direccion",
+        "pk": 2,
+        "fields": {
+            "calle": "Av. Alameda",
+            "numero": "456",
+            "depto": "101",
+            "comuna": 1
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.direccion",
+        "pk": 3,
+        "fields": {
+            "calle": "Av. Libertador Bernardo O'Higgins",
+            "numero": "777",
+            "depto": "",
+            "comuna": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.direccion",
+        "pk": 4,
+        "fields": {
+            "calle": "Av. Alessandri",
+            "numero": "321",
+            "depto": "5B",
+            "comuna": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.direccion",
+        "pk": 5,
+        "fields": {
+            "calle": "Av. del Mar",
+            "numero": "500",
+            "depto": "301",
+            "comuna": 8
+        }
+    }
+]

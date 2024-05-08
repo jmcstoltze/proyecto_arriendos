@@ -1,0 +1,51 @@
+[
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 1,
+        "fields": {
+            "region_nombre": "Región Metropolitana"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 2,
+        "fields": {
+        "region_nombre": "Región de Valparaíso"
+        }
+    },
+    {
+      "model": "proyecto_arriendos_crud.region",
+      "pk": 3,
+      "fields": {
+        "region_nombre": "Región del Biobío"
+      }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 4,
+        "fields": {
+          "region_nombre": "Región de O'Higgins"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 5,
+        "fields": {
+          "region_nombre": "Región del Maule"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 6,
+        "fields": {
+            "region_nombre": "Región de Antofagasta"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 7,
+        "fields": {
+            "region_nombre": "Región de Coquimbo"
+        }
+    }
+]

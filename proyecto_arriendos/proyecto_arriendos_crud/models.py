@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 ###################################################################################################
 
 class Region(models.Model):
-    region_id = models.AutoField(primary_key=True)
+    # region_id = models.AutoField(primary_key=True)
     region_nombre = models.CharField(max_length=80, null=False, blank=False)
 
     def __str__(self):
@@ -19,7 +19,7 @@ class Region(models.Model):
 
 
 class Comuna(models.Model):
-    comuna_id = models.AutoField(primary_key=True)
+    # comuna_id = models.AutoField(primary_key=True)
     comuna_nombre = models.CharField(max_length=80, null=False, blank=False)
     region = models.ForeignKey(Region, null=False, blank=False, on_delete=models.PROTECT) #########
 
@@ -33,7 +33,7 @@ class Comuna(models.Model):
 
 
 class Direccion(models.Model):
-    direccion_id = models.AutoField(primary_key=True)
+    # direccion_id = models.AutoField(primary_key=True)
     calle = models.CharField(max_length=80, null=False, blank=False)
     numero = models.CharField(max_length=20, null=False, blank=False)
     depto = models.CharField(max_length=20, null=True, blank=True)
@@ -59,7 +59,7 @@ class Usuario(AbstractUser):
         ('arrendador', 'Arrendador')
     ]
 
-    rut = models.CharField(max_length=20, primary_key=True)
+    rut = models.IntegerField(max_length=9, null=False, blank=False)
     nombres = models.CharField(max_length=80, null=False, blank=False)
     apellidos = models.CharField(max_length=80, null=False, blank=False)
     direccion = models.OneToOneField( ##############################################################
@@ -152,7 +152,7 @@ class Inmueble(models.Model):
         ('parcela', 'Parcela'),
     ]
 
-    inmueble_id = models.AutoField(primary_key=True)
+    # inmueble_id = models.AutoField(primary_key=True)
     inmueble_nombre = models.CharField(max_length=100, null=False, blank=False)
     descripcion = models.CharField(max_length=255, null=False, blank=False)
     m2_construidos = models.IntegerField(null=False, blank=False)
@@ -184,7 +184,7 @@ class Inmueble(models.Model):
 
 
 class Solicitud(models.Model):
-    solicitud_id = models.AutoField(primary_key=True)
+    # solicitud_id = models.AutoField(primary_key=True)
     usuario_postulante = models.ForeignKey(Usuario, null=False, blank=False, on_delete=models.PROTECT) #######################
     inmueble = models.ForeignKey(Inmueble, null=False, blank=False, on_delete=models.PROTECT) ################################
     estado_solicitud = models.BooleanField(default=False) ########## [ aceptada = True] ############
@@ -198,4 +198,3 @@ class Solicitud(models.Model):
         verbose_name = "Solicitud"
         verbose_name_plural = "Solicitudes"
         ordering = ["modificacion_registro"]
-
