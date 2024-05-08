@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 
 # Create your models here.
 ###################################################################################################
@@ -35,8 +36,8 @@ class Direccion(models.Model):
     numero = models.CharField(max_length=20, null=False, blank=False)
     depto = models.CharField(max_length=20, null=True, blank=True)
     comuna = models.ForeignKey(Comuna, null=False, blank=False, on_delete=models.PROTECT) ##########
-    creacion_registro = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    modificacion_registro = models.DateTimeField(auto_now=True, null=True, blank=True)
+    created_at = models.DateTimeField(default=timezone.now)
+    
 
     def __str__(self):
         if self.depto:        
@@ -70,8 +71,7 @@ class Usuario(AbstractUser):
     # email = models.CharField(max_length=254, null=False, blank=False) ### NO ES NECESARIO DEFINIR, VIENE DADO POR DEFECTO
                                                    ####################
     tipo_usuario = models.CharField(max_length=80, choices=TIPO_CHOICES, null=False, blank=False)
-    creacion_registro = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    modificacion_registro = models.DateTimeField(auto_now=True, null=True, blank=True)
+    created_at = models.DateTimeField(default=timezone.now)
 
     user_permissions = models.ManyToManyField(
         Permission,
@@ -93,7 +93,7 @@ class Usuario(AbstractUser):
     class Meta:
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"
-        ordering = ["apellidos"]
+        ordering = ["last_name"]
 
 
 class Inmueble(models.Model):
@@ -121,8 +121,7 @@ class Inmueble(models.Model):
     precio_mensual_arriendo = models.FloatField(null=False, blank=False)
     usuario_arrendador = models.ForeignKey(Usuario, null=False, blank=False, on_delete=models.PROTECT) #######################
     disponibilidad = models.BooleanField(default=True) ############### [ disponible = True ] ######
-    creacion_registro = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    modificacion_registro = models.DateTimeField(auto_now=True, null=True, blank=True)
+    created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.inmueble_nombre
@@ -130,15 +129,14 @@ class Inmueble(models.Model):
     class Meta:
         verbose_name = "Inmueble"
         verbose_name_plural = "Inmuebles"
-        ordering = ["modificacion_registro"]
+        ordering = ["created_at"]
 
 
 class Solicitud(models.Model):
     usuario_postulante = models.ForeignKey(Usuario, null=False, blank=False, on_delete=models.PROTECT) #######################
     inmueble = models.ForeignKey(Inmueble, null=False, blank=False, on_delete=models.PROTECT) ################################
     estado_solicitud = models.BooleanField(default=False) ########## [ aceptada = True] ############
-    creacion_registro = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    modificacion_registro = models.DateTimeField(auto_now=True, null=True, blank=True)
+    created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return f"Solicitud {self.pk}"
@@ -146,4 +144,4 @@ class Solicitud(models.Model):
     class Meta:
         verbose_name = "Solicitud"
         verbose_name_plural = "Solicitudes"
-        ordering = ["modificacion_registro"]
+        ordering = ["created_at"]
