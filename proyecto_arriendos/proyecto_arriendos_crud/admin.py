@@ -68,15 +68,16 @@ class UsuarioAdmin(admin.ModelAdmin):
         response = HttpResponse(content_type="text/csv")
         response["Content-Disposition"] = 'attachment; filename="usuarios.csv"'
         writer = csv.writer(response)
-        writer.writerow(["RUT", "Nombres", "Apellidos", "Dirección", "Teléfono", "Correo Electrónico", "Tipo de Usuario", "Fecha de Creación", "Fecha de Modificación"])
+        writer.writerow(["RUT", "Nombre de Usuario", "Nombres", "Apellidos", "Dirección", "Teléfono", "Correo Electrónico", "Tipo de Usuario", "Fecha de Creación", "Fecha de Modificación"])
         for usuario in queryset:
             writer.writerow([
                 usuario.rut,
-                usuario.nombres,
-                usuario.apellidos,
+                usuario.username,
+                usuario.first_name,
+                usuario.last_name,
                 usuario.direccion if usuario.direccion else "Sin dirección",
                 usuario.telefono,
-                usuario.correo_electronico,
+                usuario.email,
                 usuario.tipo_usuario,
                 usuario.creacion_registro,
                 usuario.modificacion_registro
@@ -101,7 +102,7 @@ class InmuebleAdmin(admin.ModelAdmin):
         ])
         for inmueble in queryset:
             direccion = inmueble.direccion if inmueble.direccion else "Sin dirección"
-            arrendador = inmueble.usuario_arrendador.nombre if inmueble.usuario_arrendador else "Desconocido"
+            arrendador = inmueble.usuario_arrendador.rut if inmueble.usuario_arrendador else "Desconocido"
             writer.writerow([                
                 inmueble.inmueble_nombre,
                 inmueble.descripcion,

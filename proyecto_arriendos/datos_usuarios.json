@@ -3,12 +3,14 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 1,
         "fields": {
+            "username": "luis_martinez",
+            "password": "contrasena_luis",
             "rut": "111111111",
-            "nombres": "Luis",
-            "apellidos": "Martínez",
+            "first_name": "Luis",
+            "last_name": "Martinez",
             "direccion": 3,
             "telefono": "111111111",
-            "correo_electronico": "luis@example.com",
+            "email": "luis@example.com",
             "tipo_usuario": "arrendador"
         }
     },
@@ -16,12 +18,14 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 2,
         "fields": {
+            "username": "ana_sanchez",
+            "password": "contrasena_ana",
             "rut": "222222222",
-            "nombres": "Ana",
-            "apellidos": "Sánchez",
+            "first_name": "Ana",
+            "last_name": "Sanchez",
             "direccion": 4,
             "telefono": "222222222",
-            "correo_electronico": "ana@example.com",
+            "email": "ana@example.com",
             "tipo_usuario": "arrendatario"
         }
     },
@@ -29,12 +33,14 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 3,
         "fields": {
+            "username": "pedro_lopez",
+            "password": "contrasena_pedro",
             "rut": "333333333",
-            "nombres": "Pedro",
-            "apellidos": "López",
+            "first_name": "Pedro",
+            "last_name": "Lopez",
             "direccion": 5,
             "telefono": "333333333",
-            "correo_electronico": "pedro@example.com",
+            "email": "pedro@example.com",
             "tipo_usuario": "arrendador"
         }
     },
@@ -42,12 +48,14 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 4,
         "fields": {
+            "username": "juan_perez",
+            "password": "contrasena_juan",
             "rut": "444444444",
-            "nombres": "Juan",
-            "apellidos": "Pérez",
+            "first_name": "Juan",
+            "last_name": "Perez",
             "direccion": 1,
             "telefono": "987654321",
-            "correo_electronico": "juan@example.com",
+            "email": "juan@example.com",
             "tipo_usuario": "arrendador"
         }
     },
@@ -55,12 +63,14 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 5,
         "fields": {
+            "username": "maria_gonzalez",
+            "password": "contrasena_maria",
             "rut": "555555555",
-            "nombres": "María",
-            "apellidos": "González",
+            "first_name": "Maria",
+            "last_name": "Gonzalez",
             "direccion": 2,
             "telefono": "123456789",
-            "correo_electronico": "maria@example.com",
+            "email": "maria@example.com",
             "tipo_usuario": "arrendatario"
         }
     }

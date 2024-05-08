@@ -56,9 +56,9 @@ class Usuario(AbstractUser):
         ('arrendador', 'Arrendador')
     ]
 
-    rut = models.IntegerField(max_length=12, null=False, blank=False)
-    nombres = models.CharField(max_length=80, null=False, blank=False)
-    apellidos = models.CharField(max_length=80, null=False, blank=False)
+    rut = models.IntegerField(null=False, blank=False)
+    # first_name = models.CharField(max_length=150, null=False, blank=False)  ### NO ES NECESARIO DEFINIR, VIENE DADO POR DEFECTO
+    # last_name = models.CharField(max_length=150, null=False, blank=False)   ### NO ES NECESARIO DEFINIR, VIENE DADO POR DEFECTO
     direccion = models.OneToOneField( ##############################################################
         "Direccion",
         related_name="usuario",
@@ -67,7 +67,7 @@ class Usuario(AbstractUser):
         on_delete=models.PROTECT,
     )
     telefono = models.CharField(max_length=30, null=False, blank=False)
-    correo_electronico = models.CharField(max_length=80, null=False, blank=False)
+    # email = models.CharField(max_length=254, null=False, blank=False) ### NO ES NECESARIO DEFINIR, VIENE DADO POR DEFECTO
                                                    ####################
     tipo_usuario = models.CharField(max_length=80, choices=TIPO_CHOICES, null=False, blank=False)
     creacion_registro = models.DateTimeField(auto_now_add=True, null=True, blank=True)
@@ -88,7 +88,7 @@ class Usuario(AbstractUser):
     )
 
     def __str__(self):
-        return f"{self.nombres}, {self.apellidos}"
+        return f"{self.first_name}, {self.last_name}"
 
     class Meta:
         verbose_name = "Usuario"
