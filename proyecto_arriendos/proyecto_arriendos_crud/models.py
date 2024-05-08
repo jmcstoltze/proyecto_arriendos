@@ -6,7 +6,6 @@ from django.utils.translation import gettext_lazy as _
 ###################################################################################################
 
 class Region(models.Model):
-    # region_id = models.AutoField(primary_key=True)
     region_nombre = models.CharField(max_length=80, null=False, blank=False)
 
     def __str__(self):
@@ -15,11 +14,10 @@ class Region(models.Model):
     class Meta:
         verbose_name = "Region"
         verbose_name_plural = "Regiones"
-        ordering = ["region_id"]
+        ordering = ["region_nombre"]
 
 
 class Comuna(models.Model):
-    # comuna_id = models.AutoField(primary_key=True)
     comuna_nombre = models.CharField(max_length=80, null=False, blank=False)
     region = models.ForeignKey(Region, null=False, blank=False, on_delete=models.PROTECT) #########
 
@@ -33,7 +31,6 @@ class Comuna(models.Model):
 
 
 class Direccion(models.Model):
-    # direccion_id = models.AutoField(primary_key=True)
     calle = models.CharField(max_length=80, null=False, blank=False)
     numero = models.CharField(max_length=20, null=False, blank=False)
     depto = models.CharField(max_length=20, null=True, blank=True)
@@ -59,7 +56,7 @@ class Usuario(AbstractUser):
         ('arrendador', 'Arrendador')
     ]
 
-    rut = models.IntegerField(max_length=9, null=False, blank=False)
+    rut = models.IntegerField(max_length=12, null=False, blank=False)
     nombres = models.CharField(max_length=80, null=False, blank=False)
     apellidos = models.CharField(max_length=80, null=False, blank=False)
     direccion = models.OneToOneField( ##############################################################
@@ -91,58 +88,12 @@ class Usuario(AbstractUser):
     )
 
     def __str__(self):
-        return self.rut
+        return f"{self.nombres}, {self.apellidos}"
 
     class Meta:
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"
         ordering = ["apellidos"]
-
-    
-    '''
-    # Para obtener el nombre del grupo al que va a pertenecer el usuario
-    def get_group_name(self):
-        if self.tipo_usuario == 'arrendatario':
-            return 'Arrendatarios'
-        elif self.tipo_usuario == 'arrendador':
-            return 'Arrendadores'
-        else:
-            return None
-        
-    # De acuerdo al tipo de usuario lo agrega al grupo correspondiente o crea el grupo si no existe
-    def save(self, *args, **kwargs):
-        if not self.pk:
-            grupo_name = self.get_group_name()
-            if grupo_name:
-                grupo, _ = Group.objects.get_or_create(name=grupo_name)
-                self.groups.add(grupo)
-        super().save(*args, **kwargs)'''
-    
-
-
-
-''' este es el segundo modelo creado dado un error y HINT
-class Arrendatario(Usuario):
-    def save(self, *args, **kwargs):
-        
-        if not self.pk:
-            grupo_name = self.get_group_name() 
-            if grupo_name:
-                grupo, _ = Group.objects.get_or_create(name=grupo_name)            
-                self.groups.add(grupo)
-        super().save(*args, **kwargs) '''
-
-''' este era el primer modelo para arrendatario y arrendador por separado
-class Arrendador(Usuario):
-    def save(self, *args, **kwargs):
-        # Verifica si el objeto aún no tiene una clave primaria asignada
-        if not self.pk:
-            # Obtiene o crea el grupo 'Arrendadores'
-            grupo_arrendador, _ = Group.objects.get_or_create(name='Arrendadores')
-            # Agrega este objeto (Arrendador) al grupo 'Arrendadores'
-            self.groups.add(grupo_arrendador)
-        # Llama al método 'save' del modelo base (Usuario)
-        super().save(*args, **kwargs)'''
 
 
 class Inmueble(models.Model):
@@ -152,7 +103,6 @@ class Inmueble(models.Model):
         ('parcela', 'Parcela'),
     ]
 
-    # inmueble_id = models.AutoField(primary_key=True)
     inmueble_nombre = models.CharField(max_length=100, null=False, blank=False)
     descripcion = models.CharField(max_length=255, null=False, blank=False)
     m2_construidos = models.IntegerField(null=False, blank=False)
@@ -184,7 +134,6 @@ class Inmueble(models.Model):
 
 
 class Solicitud(models.Model):
-    # solicitud_id = models.AutoField(primary_key=True)
     usuario_postulante = models.ForeignKey(Usuario, null=False, blank=False, on_delete=models.PROTECT) #######################
     inmueble = models.ForeignKey(Inmueble, null=False, blank=False, on_delete=models.PROTECT) ################################
     estado_solicitud = models.BooleanField(default=False) ########## [ aceptada = True] ############
@@ -192,7 +141,7 @@ class Solicitud(models.Model):
     modificacion_registro = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
-        return self.solicitud_id
+        return f"Solicitud {self.pk}"
     
     class Meta:
         verbose_name = "Solicitud"

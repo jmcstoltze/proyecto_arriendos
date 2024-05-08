@@ -3,7 +3,7 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 1,
         "fields": {
-            "rut": "11111111-1",
+            "rut": "111111111",
             "nombres": "Luis",
             "apellidos": "Martínez",
             "direccion": 3,
@@ -16,7 +16,7 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 2,
         "fields": {
-            "rut": "22222222-2",
+            "rut": "222222222",
             "nombres": "Ana",
             "apellidos": "Sánchez",
             "direccion": 4,
@@ -29,7 +29,7 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 3,
         "fields": {
-            "rut": "33333333-3",
+            "rut": "333333333",
             "nombres": "Pedro",
             "apellidos": "López",
             "direccion": 5,
@@ -42,7 +42,7 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 4,
         "fields": {
-            "rut": "44444444-4",
+            "rut": "444444444",
             "nombres": "Juan",
             "apellidos": "Pérez",
             "direccion": 1,
@@ -55,7 +55,7 @@
         "model": "proyecto_arriendos_crud.usuario",
         "pk": 5,
         "fields": {
-            "rut": "55555555-5",
+            "rut": "555555555",
             "nombres": "María",
             "apellidos": "González",
             "direccion": 2,

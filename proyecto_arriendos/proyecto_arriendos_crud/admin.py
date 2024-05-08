@@ -13,9 +13,9 @@ class RegionAdmin(admin.ModelAdmin):
         response = HttpResponse(content_type="text/csv")
         response["Content-Disposition"] = 'attachment; filename="regiones.csv"'
         writer = csv.writer(response)
-        writer.writerow(["ID", "Nombre de la Región"])
+        writer.writerow(["Nombre de la Región"])
         for region in queryset:
-            writer.writerow([region.region_id, region.region_nombre])
+            writer.writerow([region.region_nombre])
         return response
 
     export_to_csv.short_description = "Exportar a CSV"
@@ -29,9 +29,9 @@ class ComunaAdmin(admin.ModelAdmin):
         response = HttpResponse(content_type="text/csv")
         response["Content-Disposition"] = 'attachment; filename="comunas.csv"'
         writer = csv.writer(response)
-        writer.writerow(["ID", "Nombre de la Comuna", "ID de la Región"])
+        writer.writerow(["Nombre de la Comuna", "Nombre de la Región"])
         for comuna in queryset:
-            writer.writerow([comuna.comuna_id, comuna.comuna_nombre, comuna.region.region_id])
+            writer.writerow([comuna.comuna_nombre, comuna.region.region_nombre])
         return response
 
     export_to_csv.short_description = "Exportar a CSV"
@@ -45,13 +45,12 @@ class DireccionAdmin(admin.ModelAdmin):
         response = HttpResponse(content_type="text/csv")
         response["Content-Disposition"] = 'attachment; filename="direcciones.csv"'
         writer = csv.writer(response)
-        writer.writerow(["ID", "Calle", "Número", "Depto", "Comuna", "Fecha de Creación", "Fecha de Modificación"])
+        writer.writerow(["Calle", "Número", "Depto", "Comuna", "Fecha de Creación", "Fecha de Modificación"])
         for direccion in queryset:
-            writer.writerow([
-                direccion.direccion_id,
+            writer.writerow([            
                 direccion.calle,
                 direccion.numero,
-                direccion.depto,
+                direccion.depto if direccion.depto else "",
                 direccion.comuna.comuna_nombre,
                 direccion.creacion_registro,
                 direccion.modificacion_registro
@@ -96,15 +95,14 @@ class InmuebleAdmin(admin.ModelAdmin):
         response["Content-Disposition"] = 'attachment; filename="inmuebles.csv"'
         writer = csv.writer(response)
         writer.writerow([
-            "ID", "Nombre del Inmueble", "Descripción", "Metros Cuadrados Construidos", "Metros Cuadrados de Terreno",
+            "Nombre del Inmueble", "Descripción", "Metros Cuadrados Construidos", "Metros Cuadrados de Terreno",
             "Cantidad de Estacionamientos", "Cantidad de Habitaciones", "Cantidad de Baños", "Dirección",
             "Tipo de Inmueble", "Precio Mensual de Arriendo", "Arrendador", "Disponibilidad", "Fecha de Creación", "Fecha de Modificación"
         ])
         for inmueble in queryset:
             direccion = inmueble.direccion if inmueble.direccion else "Sin dirección"
-            arrendador = inmueble.usuario_arrendador.rut if inmueble.usuario_arrendador else "Desconocido"
-            writer.writerow([
-                inmueble.inmueble_id,
+            arrendador = inmueble.usuario_arrendador.nombre if inmueble.usuario_arrendador else "Desconocido"
+            writer.writerow([                
                 inmueble.inmueble_nombre,
                 inmueble.descripcion,
                 inmueble.m2_construidos,
@@ -134,11 +132,10 @@ class SolicitudAdmin(admin.ModelAdmin):
         response["Content-Disposition"] = 'attachment; filename="solicitudes.csv"'
         writer = csv.writer(response)
         writer.writerow([
-            "ID", "Usuario Postulante", "Inmueble", "Estado de Solicitud", "Fecha de Creación", "Fecha de Modificación"
+            "Usuario Postulante", "Inmueble", "Estado de Solicitud", "Fecha de Creación", "Fecha de Modificación"
         ])
         for solicitud in queryset:
-            writer.writerow([
-                solicitud.solicitud_id,
+            writer.writerow([                
                 solicitud.usuario_postulante.rut if solicitud.usuario_postulante else "Desconocido",
                 solicitud.inmueble.inmueble_nombre if solicitud.inmueble else "Desconocido",
                 "Aceptada" if solicitud.estado_solicitud else "Pendiente",

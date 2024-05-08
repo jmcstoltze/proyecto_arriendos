@@ -10,7 +10,7 @@ El archivo [proyecto_arriendos.jpg](proyecto_arriendos.jpg) contiene el modelo e
 
 ## Datos de Prueba
 
-Para poblar la base de datos con datos de prueba, se proporciona un archivo JSON llamado `datos_prueba.json`. Puedes cargar estos datos utilizando el comando `loaddata` de Django:
+Para poblar la base de datos con datos de prueba, se proporciona varios archivos JSON llamados `datos_regiones.json`, `datos_comunas.json`, `datos_direcciones.json`, `datos_usuarios.json`, `datos_inmuebles.json`, `datos_solicitudes.json`. Puedes cargar estos datos utilizando el comando `loaddata` de Django:
 
 ```bash
 python manage.py loaddata datos_prueba.json

@@ -10,28 +10,28 @@
         "model": "proyecto_arriendos_crud.region",
         "pk": 2,
         "fields": {
-        "region_nombre": "Región de Valparaíso"
+            "region_nombre": "Región de Valparaíso"
         }
     },
     {
       "model": "proyecto_arriendos_crud.region",
       "pk": 3,
       "fields": {
-        "region_nombre": "Región del Biobío"
+            "region_nombre": "Región del Biobío"
       }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 4,
         "fields": {
-          "region_nombre": "Región de O'Higgins"
+            "region_nombre": "Región de O'Higgins"
         }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 5,
         "fields": {
-          "region_nombre": "Región del Maule"
+            "region_nombre": "Región del Maule"
         }
     },
     {
