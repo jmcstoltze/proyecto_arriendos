@@ -1,52 +1,203 @@
 [
     {
-        "model": "proyecto_arriendos_crud.direccion",
-        "pk": 1,
-        "fields": {
-            "calle": "Av. Providencia",
-            "numero": "123",
-            "depto": "",
-            "comuna": 2
-        }
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 1,
+      "fields": {
+        "calle": "Av. Los Robles",
+        "numero": "456",
+        "depto": "",
+        "comuna": 78
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.direccion",
-        "pk": 2,
-        "fields": {
-            "calle": "Av. Alameda",
-            "numero": "456",
-            "depto": "101",
-            "comuna": 1
-        }
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 2,
+      "fields": {
+        "calle": "Calle Principal",
+        "numero": "789",
+        "depto": "3A",
+        "comuna": 150
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.direccion",
-        "pk": 3,
-        "fields": {
-            "calle": "Av. Libertador Bernardo O'Higgins",
-            "numero": "777",
-            "depto": "",
-            "comuna": 5
-        }
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 3,
+      "fields": {
+        "calle": "Av. Libertad",
+        "numero": "234",
+        "depto": "",
+        "comuna": 220
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.direccion",
-        "pk": 4,
-        "fields": {
-            "calle": "Av. Alessandri",
-            "numero": "321",
-            "depto": "5B",
-            "comuna": 6
-        }
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 4,
+      "fields": {
+        "calle": "Calle del Sol",
+        "numero": "567",
+        "depto": "",
+        "comuna": 10
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.direccion",
-        "pk": 5,
-        "fields": {
-            "calle": "Av. del Mar",
-            "numero": "500",
-            "depto": "301",
-            "comuna": 8
-        }
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 5,
+      "fields": {
+        "calle": "Av. de Mayo",
+        "numero": "890",
+        "depto": "5B",
+        "comuna": 280
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 6,
+      "fields": {
+        "calle": "Av. San Martín",
+        "numero": "123",
+        "depto": "",
+        "comuna": 33
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 7,
+      "fields": {
+        "calle": "Calle Primavera",
+        "numero": "456",
+        "depto": "",
+        "comuna": 102
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 8,
+      "fields": {
+        "calle": "Av. de los Pinos",
+        "numero": "789",
+        "depto": "2C",
+        "comuna": 190
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 9,
+      "fields": {
+        "calle": "Calle de la Luna",
+        "numero": "345",
+        "depto": "",
+        "comuna": 267
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 10,
+      "fields": {
+        "calle": "Av. del Sol",
+        "numero": "678",
+        "depto": "",
+        "comuna": 55
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 11,
+      "fields": {
+        "calle": "Calle de las Flores",
+        "numero": "901",
+        "depto": "4A",
+        "comuna": 310
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 12,
+      "fields": {
+        "calle": "Av. Primavera",
+        "numero": "234",
+        "depto": "",
+        "comuna": 5
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 13,
+      "fields": {
+        "calle": "Calle del Río",
+        "numero": "567",
+        "depto": "",
+        "comuna": 140
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 14,
+      "fields": {
+        "calle": "Av. Central",
+        "numero": "890",
+        "depto": "1B",
+        "comuna": 230
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 15,
+      "fields": {
+        "calle": "Calle del Monte",
+        "numero": "123",
+        "depto": "",
+        "comuna": 48
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 16,
+      "fields": {
+        "calle": "Av. de las Palmeras",
+        "numero": "456",
+        "depto": "",
+        "comuna": 85
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 17,
+      "fields": {
+        "calle": "Calle del Mar",
+        "numero": "789",
+        "depto": "3C",
+        "comuna": 270
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 18,
+      "fields": {
+        "calle": "Av. de los Cerezos",
+        "numero": "234",
+        "depto": "",
+        "comuna": 155
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 19,
+      "fields": {
+        "calle": "Calle del Bosque",
+        "numero": "567",
+        "depto": "",
+        "comuna": 20
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.direccion",
+      "pk": 20,
+      "fields": {
+        "calle": "Av. de la Playa",
+        "numero": "890",
+        "depto": "",
+        "comuna": 330
+      }
     }
-]
+  ]
+  

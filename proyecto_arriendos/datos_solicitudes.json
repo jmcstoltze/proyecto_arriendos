@@ -1,29 +1,182 @@
 [
     {
-        "model": "proyecto_arriendos_crud.solicitud",
-        "pk": 1,
-        "fields": {
-            "usuario_postulante": 2,
-            "inmueble": 1,
-            "estado_solicitud": false
-        }
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 1,
+      "fields": {
+        "usuario_postulante": 2,
+        "inmueble": 1,
+        "estado_solicitud": false
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.solicitud",
-        "pk": 2,
-        "fields": {
-            "usuario_postulante": 4,
-            "inmueble": 2,
-            "estado_solicitud": false
-        }
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 2,
+      "fields": {
+        "usuario_postulante": 2,
+        "inmueble": 2,
+        "estado_solicitud": false
+      }
     },
     {
-        "model": "proyecto_arriendos_crud.solicitud",
-        "pk": 3,
-        "fields": {
-            "usuario_postulante": 3,
-            "inmueble": 4,
-            "estado_solicitud": false
-        }
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 3,
+      "fields": {
+        "usuario_postulante": 2,
+        "inmueble": 3,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 4,
+      "fields": {
+        "usuario_postulante": 2,
+        "inmueble": 4,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 5,
+      "fields": {
+        "usuario_postulante": 2,
+        "inmueble": 5,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 6,
+      "fields": {
+        "usuario_postulante": 3,
+        "inmueble": 6,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 7,
+      "fields": {
+        "usuario_postulante": 3,
+        "inmueble": 7,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 8,
+      "fields": {
+        "usuario_postulante": 3,
+        "inmueble": 8,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 9,
+      "fields": {
+        "usuario_postulante": 3,
+        "inmueble": 9,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 10,
+      "fields": {
+        "usuario_postulante": 3,
+        "inmueble": 10,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 11,
+      "fields": {
+        "usuario_postulante": 6,
+        "inmueble": 1,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 12,
+      "fields": {
+        "usuario_postulante": 6,
+        "inmueble": 2,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 13,
+      "fields": {
+        "usuario_postulante": 6,
+        "inmueble": 3,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 14,
+      "fields": {
+        "usuario_postulante": 6,
+        "inmueble": 4,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 15,
+      "fields": {
+        "usuario_postulante": 6,
+        "inmueble": 5,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 16,
+      "fields": {
+        "usuario_postulante": 7,
+        "inmueble": 6,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 17,
+      "fields": {
+        "usuario_postulante": 7,
+        "inmueble": 7,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 18,
+      "fields": {
+        "usuario_postulante": 7,
+        "inmueble": 8,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 19,
+      "fields": {
+        "usuario_postulante": 7,
+        "inmueble": 9,
+        "estado_solicitud": false
+      }
+    },
+    {
+      "model": "proyecto_arriendos_crud.solicitud",
+      "pk": 20,
+      "fields": {
+        "usuario_postulante": 7,
+        "inmueble": 10,
+        "estado_solicitud": false
+      }
     }
 ]

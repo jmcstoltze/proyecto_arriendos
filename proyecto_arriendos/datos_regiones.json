@@ -3,49 +3,126 @@
         "model": "proyecto_arriendos_crud.region",
         "pk": 1,
         "fields": {
-            "region_nombre": "Región Metropolitana"
+            "region_nombre": "I Región Tarapacá"
         }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 2,
         "fields": {
-            "region_nombre": "Región de Valparaíso"
+            "region_nombre": "II Región Antofagasta"
         }
     },
     {
-      "model": "proyecto_arriendos_crud.region",
-      "pk": 3,
-      "fields": {
-            "region_nombre": "Región del Biobío"
-      }
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 3,
+        "fields": {
+            "region_nombre": "III Región de Atacama"
+        }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 4,
         "fields": {
-            "region_nombre": "Región de O'Higgins"
+            "region_nombre": "IV Región de Coquimbo"
         }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 5,
         "fields": {
-            "region_nombre": "Región del Maule"
+            "region_nombre": "V Región de Valparaíso"
         }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 6,
         "fields": {
-            "region_nombre": "Región de Antofagasta"
+            "region_nombre": "VI Región del Libertador Gral. Bernardo O'Higgins"
         }
     },
     {
         "model": "proyecto_arriendos_crud.region",
         "pk": 7,
         "fields": {
-            "region_nombre": "Región de Coquimbo"
+            "region_nombre": "VII Región del Maule"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 8,
+        "fields": {
+            "region_nombre": "VIII Región del Biobío"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 9,
+        "fields": {
+            "region_nombre": "IX Región de La Araucanía"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 8,
+        "fields": {
+            "region_nombre": "VIII Región del Biobío"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 9,
+        "fields": {
+            "region_nombre": "IX Región de La Araucanía"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 10,
+        "fields": {
+            "region_nombre": "X Región de Los Lagos"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 11,
+        "fields": {
+            "region_nombre": "XI Región de Aysén"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 12,
+        "fields": {
+            "region_nombre": "XII Región de Magallanes"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 13,
+        "fields": {
+            "region_nombre": "Región Metropolitana de Santiago"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 14,
+        "fields": {
+            "region_nombre": "XIV Región de Los Ríos"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 15,
+        "fields": {
+            "region_nombre": "XV Región de Arica y Parinacota"
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.region",
+        "pk": 16,
+        "fields": {
+            "region_nombre": "XVI Región del Ñuble"
         }
     }
 ]

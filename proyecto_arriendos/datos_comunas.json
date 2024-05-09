@@ -3,7 +3,7 @@
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 1,
         "fields": {
-            "comuna_nombre": "Santiago",
+            "comuna_nombre": "Iquique",
             "region": 1
         }
     },
@@ -11,7 +11,7 @@
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 2,
         "fields": {
-            "comuna_nombre": "Providencia",
+            "comuna_nombre": "Alto Hospicio",
             "region": 1
         }
     },
@@ -19,48 +19,2744 @@
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 3,
         "fields": {
-            "comuna_nombre": "Viña del Mar",
-            "region": 2
+            "comuna_nombre": "Pozo Almonte",
+            "region": 1
         }
     },
     {
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 4,
         "fields": {
-            "comuna_nombre": "Concepción",
-            "region": 3
+            "comuna_nombre": "Camiña",
+            "region": 1
         }
     },
     {
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 5,
         "fields": {
-            "comuna_nombre": "Rancagua",
-            "region": 4
+            "comuna_nombre": "Colchane",
+            "region": 1
         }
     },
     {
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 6,
         "fields": {
-            "comuna_nombre": "Curicó",
-            "region": 5
+            "comuna_nombre": "Huara",
+            "region": 1
         }
     },
     {
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 7,
         "fields": {
-            "comuna_nombre": "Antofagasta",
-            "region": 6
+            "comuna_nombre": "Pica",
+            "region": 1
         }
     },
     {
         "model": "proyecto_arriendos_crud.comuna",
         "pk": 8,
         "fields": {
+            "comuna_nombre": "Antofagasta",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 9,
+        "fields": {
+            "comuna_nombre": "Mejillones",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 10,
+        "fields": {
+            "comuna_nombre": "Sierra Gorda",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 11,
+        "fields": {
+            "comuna_nombre": "Taltal",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 12,
+        "fields": {
+            "comuna_nombre": "Calama",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 13,
+        "fields": {
+            "comuna_nombre": "Ollagüe",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 14,
+        "fields": {
+            "comuna_nombre": "San Pedro de Atacama",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 15,
+        "fields": {
+            "comuna_nombre": "Tocopilla",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 16,
+        "fields": {
+            "comuna_nombre": "María Elena",
+            "region": 2
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 17,
+        "fields": {
+            "comuna_nombre": "Copiapó",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 18,
+        "fields": {
+            "comuna_nombre": "Caldera",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 19,
+        "fields": {
+            "comuna_nombre": "Tierra Amarilla",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 20,
+        "fields": {
+            "comuna_nombre": "Chañaral",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 21,
+        "fields": {
+            "comuna_nombre": "Diego de Almagro",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 22,
+        "fields": {
+            "comuna_nombre": "Vallenar",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 23,
+        "fields": {
+            "comuna_nombre": "Alto del Carmen",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 24,
+        "fields": {
+            "comuna_nombre": "Freirina",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 25,
+        "fields": {
+            "comuna_nombre": "Huasco",
+            "region": 3
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 26,
+        "fields": {
             "comuna_nombre": "La Serena",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 27,
+        "fields": {
+            "comuna_nombre": "Coquimbo",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 28,
+        "fields": {
+            "comuna_nombre": "Andacollo",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 29,
+        "fields": {
+            "comuna_nombre": "La Higuera",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 30,
+        "fields": {
+            "comuna_nombre": "Paiguano",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 31,
+        "fields": {
+            "comuna_nombre": "Vicuña",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 32,
+        "fields": {
+            "comuna_nombre": "Illapel",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 33,
+        "fields": {
+            "comuna_nombre": "Canela",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 34,
+        "fields": {
+            "comuna_nombre": "Los Vilos",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 35,
+        "fields": {
+            "comuna_nombre": "Salamanca",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 36,
+        "fields": {
+            "comuna_nombre": "Ovalle",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 37,
+        "fields": {
+            "comuna_nombre": "Combarbalá",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 38,
+        "fields": {
+            "comuna_nombre": "Monte Patria",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 39,
+        "fields": {
+            "comuna_nombre": "Punitaqui",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 40,
+        "fields": {
+            "comuna_nombre": "Río Hurtado",
+            "region": 4
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 41,
+        "fields": {
+            "comuna_nombre": "Valparaíso",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 42,
+        "fields": {
+            "comuna_nombre": "Casablanca",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 43,
+        "fields": {
+            "comuna_nombre": "Concón",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 44,
+        "fields": {
+            "comuna_nombre": "Juan Fernández",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 45,
+        "fields": {
+            "comuna_nombre": "Puchuncaví",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 46,
+        "fields": {
+            "comuna_nombre": "Quintero",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 47,
+        "fields": {
+            "comuna_nombre": "Viña del Mar",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 48,
+        "fields": {
+            "comuna_nombre": "Isla de Pascua",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 49,
+        "fields": {
+            "comuna_nombre": "Los Andes",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 50,
+        "fields": {
+            "comuna_nombre": "Calle Larga",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 51,
+        "fields": {
+            "comuna_nombre": "Rinconada",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 52,
+        "fields": {
+            "comuna_nombre": "San Esteban",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 53,
+        "fields": {
+            "comuna_nombre": "La Ligua",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 54,
+        "fields": {
+            "comuna_nombre": "Cabildo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 55,
+        "fields": {
+            "comuna_nombre": "Papudo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 56,
+        "fields": {
+            "comuna_nombre": "Petorca",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 57,
+        "fields": {
+            "comuna_nombre": "Zapallar",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 58,
+        "fields": {
+            "comuna_nombre": "Quillota",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 59,
+        "fields": {
+            "comuna_nombre": "Calera",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 60,
+        "fields": {
+            "comuna_nombre": "Hijuelas",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 61,
+        "fields": {
+            "comuna_nombre": "La Cruz",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 62,
+        "fields": {
+            "comuna_nombre": "Nogales",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 63,
+        "fields": {
+            "comuna_nombre": "San Antonio",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 64,
+        "fields": {
+            "comuna_nombre": "Algarrobo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 65,
+        "fields": {
+            "comuna_nombre": "Cartagena",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 66,
+        "fields": {
+            "comuna_nombre": "El Quisco",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 67,
+        "fields": {
+            "comuna_nombre": "El Tabo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 68,
+        "fields": {
+            "comuna_nombre": "Santo Domingo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 69,
+        "fields": {
+            "comuna_nombre": "San Felipe",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 70,
+        "fields": {
+            "comuna_nombre": "Catemu",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 71,
+        "fields": {
+            "comuna_nombre": "Llaillay",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 72,
+        "fields": {
+            "comuna_nombre": "Panquehue",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 73,
+        "fields": {
+            "comuna_nombre": "Putaendo",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 74,
+        "fields": {
+            "comuna_nombre": "Santa María",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 75,
+        "fields": {
+            "comuna_nombre": "Quilpué",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 76,
+        "fields": {
+            "comuna_nombre": "Limache",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 77,
+        "fields": {
+            "comuna_nombre": "Olmué",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 78,
+        "fields": {
+            "comuna_nombre": "Villa Alemana",
+            "region": 5
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 79,
+        "fields": {
+            "comuna_nombre": "Rancagua",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 80,
+        "fields": {
+            "comuna_nombre": "Codegua",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 81,
+        "fields": {
+            "comuna_nombre": "Coinco",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 82,
+        "fields": {
+            "comuna_nombre": "Coltauco",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 83,
+        "fields": {
+            "comuna_nombre": "Doñihue",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 84,
+        "fields": {
+            "comuna_nombre": "Graneros",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 85,
+        "fields": {
+            "comuna_nombre": "Las Cabras",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 86,
+        "fields": {
+            "comuna_nombre": "Machalí",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 87,
+        "fields": {
+            "comuna_nombre": "Mostazal",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 88,
+        "fields": {
+            "comuna_nombre": "Olivar",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 89,
+        "fields": {
+            "comuna_nombre": "Peumo",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 90,
+        "fields": {
+            "comuna_nombre": "Pichidegua",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 91,
+        "fields": {
+            "comuna_nombre": "Quinta de Tilcoco",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 92,
+        "fields": {
+            "comuna_nombre": "Rengo",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 93,
+        "fields": {
+            "comuna_nombre": "Requínoa",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 94,
+        "fields": {
+            "comuna_nombre": "San Vicente",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 95,
+        "fields": {
+            "comuna_nombre": "Pichilemu",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 96,
+        "fields": {
+            "comuna_nombre": "La Estrella",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 97,
+        "fields": {
+            "comuna_nombre": "Litueche",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 98,
+        "fields": {
+            "comuna_nombre": "Marchihue",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 99,
+        "fields": {
+            "comuna_nombre": "Navidad",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 100,
+        "fields": {
+            "comuna_nombre": "Paredones",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 101,
+        "fields": {
+            "comuna_nombre": "San Fernando",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 102,
+        "fields": {
+            "comuna_nombre": "Chépica",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 103,
+        "fields": {
+            "comuna_nombre": "Chimbarongo",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 104,
+        "fields": {
+            "comuna_nombre": "Lolol",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 105,
+        "fields": {
+            "comuna_nombre": "Nancagua",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 106,
+        "fields": {
+            "comuna_nombre": "Palmilla",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 107,
+        "fields": {
+            "comuna_nombre": "Peralillo",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 108,
+        "fields": {
+            "comuna_nombre": "Placilla",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 109,
+        "fields": {
+            "comuna_nombre": "Pumanque",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 110,
+        "fields": {
+            "comuna_nombre": "Santa Cruz",
+            "region": 6
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 111,
+        "fields": {
+            "comuna_nombre": "Talca",
             "region": 7
         }
-    }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 112,
+        "fields": {
+            "comuna_nombre": "Constitución",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 113,
+        "fields": {
+            "comuna_nombre": "Curepto",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 114,
+        "fields": {
+            "comuna_nombre": "Empedrado",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 115,
+        "fields": {
+            "comuna_nombre": "Maule",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 116,
+        "fields": {
+            "comuna_nombre": "Pelarco",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 117,
+        "fields": {
+            "comuna_nombre": "Pencahue",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 118,
+        "fields": {
+            "comuna_nombre": "Río Claro",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 119,
+        "fields": {
+            "comuna_nombre": "San Clemente",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 120,
+        "fields": {
+            "comuna_nombre": "San Rafael",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 121,
+        "fields": {
+            "comuna_nombre": "Cauquenes",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 122,
+        "fields": {
+            "comuna_nombre": "Chanco",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 123,
+        "fields": {
+            "comuna_nombre": "Pelluhue",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 124,
+        "fields": {
+            "comuna_nombre": "Curicó",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 125,
+        "fields": {
+            "comuna_nombre": "Hualañé",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 126,
+        "fields": {
+            "comuna_nombre": "Licantén",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 127,
+        "fields": {
+            "comuna_nombre": "Molina",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 128,
+        "fields": {
+            "comuna_nombre": "Rauco",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 129,
+        "fields": {
+            "comuna_nombre": "Romeral",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 130,
+        "fields": {
+            "comuna_nombre": "Sagrada Familia",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 131,
+        "fields": {
+            "comuna_nombre": "Teno",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 132,
+        "fields": {
+            "comuna_nombre": "Vichuquén",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 133,
+        "fields": {
+            "comuna_nombre": "Linares",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 134,
+        "fields": {
+            "comuna_nombre": "Colbún",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 135,
+        "fields": {
+            "comuna_nombre": "Longaví",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 136,
+        "fields": {
+            "comuna_nombre": "Parral",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 137,
+        "fields": {
+            "comuna_nombre": "Retiro",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 138,
+        "fields": {
+            "comuna_nombre": "San Javier",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 139,
+        "fields": {
+            "comuna_nombre": "Villa Alegre",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 140,
+        "fields": {
+            "comuna_nombre": "Yerbas Buenas",
+            "region": 7
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 141,
+        "fields": {
+            "comuna_nombre": "Concepción",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 142,
+        "fields": {
+            "comuna_nombre": "Coronel",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 143,
+        "fields": {
+            "comuna_nombre": "Chiguayante",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 144,
+        "fields": {
+            "comuna_nombre": "Florida",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 145,
+        "fields": {
+            "comuna_nombre": "Hualqui",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 146,
+        "fields": {
+            "comuna_nombre": "Lota",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 147,
+        "fields": {
+            "comuna_nombre": "Penco",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 148,
+        "fields": {
+            "comuna_nombre": "San Pedro de la Paz",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 149,
+        "fields": {
+            "comuna_nombre": "Santa Juana",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 150,
+        "fields": {
+            "comuna_nombre": "Talcahuano",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 151,
+        "fields": {
+            "comuna_nombre": "Tomé",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 152,
+        "fields": {
+            "comuna_nombre": "Hualpén",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 153,
+        "fields": {
+            "comuna_nombre": "Lebu",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 154,
+        "fields": {
+            "comuna_nombre": "Arauco",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 155,
+        "fields": {
+            "comuna_nombre": "Cañete",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 156,
+        "fields": {
+            "comuna_nombre": "Contulmo",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 157,
+        "fields": {
+            "comuna_nombre": "Curanilahue",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 158,
+        "fields": {
+            "comuna_nombre": "Los Álamos",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 159,
+        "fields": {
+            "comuna_nombre": "Tirúa",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 160,
+        "fields": {
+            "comuna_nombre": "Los Ángeles",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 161,
+        "fields": {
+            "comuna_nombre": "Antuco",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 162,
+        "fields": {
+            "comuna_nombre": "Cabrero",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 163,
+        "fields": {
+            "comuna_nombre": "Laja",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 164,
+        "fields": {
+            "comuna_nombre": "Mulchén",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 165,
+        "fields": {
+            "comuna_nombre": "Nacimiento",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 166,
+        "fields": {
+            "comuna_nombre": "Negrete",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 167,
+        "fields": {
+            "comuna_nombre": "Quilaco",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 168,
+        "fields": {
+            "comuna_nombre": "Quilleco",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 169,
+        "fields": {
+            "comuna_nombre": "San Rosendo",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 170,
+        "fields": {
+            "comuna_nombre": "Santa Bárbara",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 171,
+        "fields": {
+            "comuna_nombre": "Tucapel",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 172,
+        "fields": {
+            "comuna_nombre": "Yumbel",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 173,
+        "fields": {
+            "comuna_nombre": "Alto Biobío",
+            "region": 8
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 174,
+        "fields": {
+            "comuna_nombre": "Temuco",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 175,
+        "fields": {
+            "comuna_nombre": "Carahue",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 176,
+        "fields": {
+            "comuna_nombre": "Cunco",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 177,
+        "fields": {
+            "comuna_nombre": "Curarrehue",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 178,
+        "fields": {
+            "comuna_nombre": "Freire",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 179,
+        "fields": {
+            "comuna_nombre": "Galvarino",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 180,
+        "fields": {
+            "comuna_nombre": "Gorbea",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 181,
+        "fields": {
+            "comuna_nombre": "Lautaro",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 182,
+        "fields": {
+            "comuna_nombre": "Loncoche",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 183,
+        "fields": {
+            "comuna_nombre": "Melipeuco",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 184,
+        "fields": {
+            "comuna_nombre": "Nueva Imperial",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 185,
+        "fields": {
+            "comuna_nombre": "Padre las Casas",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 186,
+        "fields": {
+            "comuna_nombre": "Perquenco",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 187,
+        "fields": {
+            "comuna_nombre": "Pitrufquén",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 188,
+        "fields": {
+            "comuna_nombre": "Pucón",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 189,
+        "fields": {
+            "comuna_nombre": "Saavedra",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 190,
+        "fields": {
+            "comuna_nombre": "Teodoro Schmidt",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 191,
+        "fields": {
+            "comuna_nombre": "Toltén",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 192,
+        "fields": {
+            "comuna_nombre": "Vilcún",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 193,
+        "fields": {
+            "comuna_nombre": "Villarrica",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 194,
+        "fields": {
+            "comuna_nombre": "Cholchol",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 195,
+        "fields": {
+            "comuna_nombre": "Angol",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 196,
+        "fields": {
+            "comuna_nombre": "Collipulli",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 197,
+        "fields": {
+            "comuna_nombre": "Curacautín",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 198,
+        "fields": {
+            "comuna_nombre": "Ercilla",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 199,
+        "fields": {
+            "comuna_nombre": "Lonquimay",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 200,
+        "fields": {
+            "comuna_nombre": "Los Sauces",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 201,
+        "fields": {
+            "comuna_nombre": "Lumaco",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 202,
+        "fields": {
+            "comuna_nombre": "Purén",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 203,
+        "fields": {
+            "comuna_nombre": "Renaico",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 204,
+        "fields": {
+            "comuna_nombre": "Traiguén",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 205,
+        "fields": {
+            "comuna_nombre": "Victoria",
+            "region": 9
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 206,
+        "fields": {
+            "comuna_nombre": "Puerto Montt",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 207,
+        "fields": {
+            "comuna_nombre": "Calbuco",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 208,
+        "fields": {
+            "comuna_nombre": "Cochamó",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 209,
+        "fields": {
+            "comuna_nombre": "Fresia",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 210,
+        "fields": {
+            "comuna_nombre": "Frutillar",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 211,
+        "fields": {
+            "comuna_nombre": "Los Muermos",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 212,
+        "fields": {
+            "comuna_nombre": "Llanquihue",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 213,
+        "fields": {
+            "comuna_nombre": "Maullín",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 214,
+        "fields": {
+            "comuna_nombre": "Puerto Varas",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 215,
+        "fields": {
+            "comuna_nombre": "Castro",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 216,
+        "fields": {
+            "comuna_nombre": "Ancud",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 217,
+        "fields": {
+            "comuna_nombre": "Chonchi",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 218,
+        "fields": {
+            "comuna_nombre": "Curaco de Vélez",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 219,
+        "fields": {
+            "comuna_nombre": "Dalcahue",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 220,
+        "fields": {
+            "comuna_nombre": "Puqueldón",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 221,
+        "fields": {
+            "comuna_nombre": "Queilén",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 222,
+        "fields": {
+            "comuna_nombre": "Quellón",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 223,
+        "fields": {
+            "comuna_nombre": "Quemchi",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 224,
+        "fields": {
+            "comuna_nombre": "Quinchao",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 225,
+        "fields": {
+            "comuna_nombre": "Osorno",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 226,
+        "fields": {
+            "comuna_nombre": "Puerto Octay",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 227,
+        "fields": {
+            "comuna_nombre": "Purranque",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 228,
+        "fields": {
+            "comuna_nombre": "Puyehue",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 229,
+        "fields": {
+            "comuna_nombre": "Río Negro",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 230,
+        "fields": {
+            "comuna_nombre": "San Juan de la Costa",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 231,
+        "fields": {
+            "comuna_nombre": "San Pablo",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 232,
+        "fields": {
+            "comuna_nombre": "Chaitén",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 233,
+        "fields": {
+            "comuna_nombre": "Futaleufú",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 234,
+        "fields": {
+            "comuna_nombre": "Hualaihué",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 235,
+        "fields": {
+            "comuna_nombre": "Palena",
+            "region": 10
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 236,
+        "fields": {
+            "comuna_nombre": "Coihaique",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 237,
+        "fields": {
+            "comuna_nombre": "Lago Verde",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 238,
+        "fields": {
+            "comuna_nombre": "Aisén",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 239,
+        "fields": {
+            "comuna_nombre": "Cisnes",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 240,
+        "fields": {
+            "comuna_nombre": "Guaitecas",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 241,
+        "fields": {
+            "comuna_nombre": "Cochrane",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 242,
+        "fields": {
+            "comuna_nombre": "O'Higgins",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 243,
+        "fields": {
+            "comuna_nombre": "Tortel",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 244,
+        "fields": {
+            "comuna_nombre": "Chile Chico",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 245,
+        "fields": {
+            "comuna_nombre": "Río Ibáñez",
+            "region": 11
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 246,
+        "fields": {
+            "comuna_nombre": "Punta Arenas",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 247,
+        "fields": {
+            "comuna_nombre": "Laguna Blanca",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 248,
+        "fields": {
+            "comuna_nombre": "Río Verde",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 249,
+        "fields": {
+            "comuna_nombre": "San Gregorio",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 250,
+        "fields": {
+            "comuna_nombre": "Cabo de Hornos (Ex Navarino)",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 251,
+        "fields": {
+            "comuna_nombre": "Antártica",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 252,
+        "fields": {
+            "comuna_nombre": "Porvenir",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 253,
+        "fields": {
+            "comuna_nombre": "Primavera",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 254,
+        "fields": {
+            "comuna_nombre": "Timaukel",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 255,
+        "fields": {
+            "comuna_nombre": "Natales",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 256,
+        "fields": {
+            "comuna_nombre": "Torres del Paine",
+            "region": 12
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 257,
+        "fields": {
+            "comuna_nombre": "Cerrillos",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 258,
+        "fields": {
+            "comuna_nombre": "Cerro Navia",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 259,
+        "fields": {
+            "comuna_nombre": "Conchalí",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 260,
+        "fields": {
+            "comuna_nombre": "El Bosque",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 261,
+        "fields": {
+            "comuna_nombre": "Estación Central",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 262,
+        "fields": {
+            "comuna_nombre": "Huechuraba",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 263,
+        "fields": {
+            "comuna_nombre": "Independencia",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 264,
+        "fields": {
+            "comuna_nombre": "La Cisterna",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 265,
+        "fields": {
+            "comuna_nombre": "La Florida",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 266,
+        "fields": {
+            "comuna_nombre": "La Granja",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 267,
+        "fields": {
+            "comuna_nombre": "La Pintana",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 268,
+        "fields": {
+            "comuna_nombre": "La Reina",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 269,
+        "fields": {
+            "comuna_nombre": "Las Condes",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 270,
+        "fields": {
+            "comuna_nombre": "Lo Barnechea",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 271,
+        "fields": {
+            "comuna_nombre": "Lo Espejo",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 272,
+        "fields": {
+            "comuna_nombre": "Lo Prado",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 273,
+        "fields": {
+            "comuna_nombre": "Macul",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 274,
+        "fields": {
+            "comuna_nombre": "Maipú",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 275,
+        "fields": {
+            "comuna_nombre": "Ñuñoa",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 276,
+        "fields": {
+            "comuna_nombre": "Pedro Aguirre Cerda",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 277,
+        "fields": {
+            "comuna_nombre": "Peñalolén",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 278,
+        "fields": {
+            "comuna_nombre": "Providencia",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 279,
+        "fields": {
+            "comuna_nombre": "Pudahuel",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 280,
+        "fields": {
+            "comuna_nombre": "Quilicura",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 281,
+        "fields": {
+            "comuna_nombre": "Quinta Normal",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 282,
+        "fields": {
+            "comuna_nombre": "Recoleta",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 283,
+        "fields": {
+            "comuna_nombre": "Renca",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 284,
+        "fields": {
+            "comuna_nombre": "Santiago",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 285,
+        "fields": {
+            "comuna_nombre": "San Joaquín",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 286,
+        "fields": {
+            "comuna_nombre": "San Miguel",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 287,
+        "fields": {
+            "comuna_nombre": "San Ramón",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 288,
+        "fields": {
+            "comuna_nombre": "Vitacura",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 289,
+        "fields": {
+            "comuna_nombre": "Puente Alto",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 290,
+        "fields": {
+            "comuna_nombre": "Pirque",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 291,
+        "fields": {
+            "comuna_nombre": "San José de Maipo",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 292,
+        "fields": {
+            "comuna_nombre": "Colina",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 293,
+        "fields": {
+            "comuna_nombre": "Lampa",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 294,
+        "fields": {
+            "comuna_nombre": "Tiltil",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 295,
+        "fields": {
+            "comuna_nombre": "San Bernardo",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 296,
+        "fields": {
+            "comuna_nombre": "Buin",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 297,
+        "fields": {
+            "comuna_nombre": "Calera de Tango",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 298,
+        "fields": {
+            "comuna_nombre": "Paine",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 299,
+        "fields": {
+            "comuna_nombre": "Melipilla",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 300,
+        "fields": {
+            "comuna_nombre": "Alhué",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 301,
+        "fields": {
+            "comuna_nombre": "Curacaví",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 302,
+        "fields": {
+            "comuna_nombre": "María Pinto",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 303,
+        "fields": {
+            "comuna_nombre": "San Pedro",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 304,
+        "fields": {
+            "comuna_nombre": "Talagante",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 305,
+        "fields": {
+            "comuna_nombre": "El Monte",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 306,
+        "fields": {
+            "comuna_nombre": "Isla de Maipo",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 307,
+        "fields": {
+            "comuna_nombre": "Padre Hurtado",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 308,
+        "fields": {
+            "comuna_nombre": "Peñaflor",
+            "region": 13
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 309,
+        "fields": {
+            "comuna_nombre": "Valdivia",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 310,
+        "fields": {
+            "comuna_nombre": "Corral",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 311,
+        "fields": {
+            "comuna_nombre": "Lanco",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 312,
+        "fields": {
+            "comuna_nombre": "Los Lagos",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 313,
+        "fields": {
+            "comuna_nombre": "Máfil",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 314,
+        "fields": {
+            "comuna_nombre": "Mariquina",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 315,
+        "fields": {
+            "comuna_nombre": "Paillaco",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 316,
+        "fields": {
+            "comuna_nombre": "Panguipulli",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 317,
+        "fields": {
+            "comuna_nombre": "La Unión",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 318,
+        "fields": {
+            "comuna_nombre": "Futrono",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 319,
+        "fields": {
+            "comuna_nombre": "Lago Ranco",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 320,
+        "fields": {
+            "comuna_nombre": "Río Bueno",
+            "region": 14
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 321,
+        "fields": {
+            "comuna_nombre": "Arica",
+            "region": 15
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 322,
+        "fields": {
+            "comuna_nombre": "Camarones",
+            "region": 15
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 323,
+        "fields": {
+            "comuna_nombre": "Putre",
+            "region": 15
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 324,
+        "fields": {
+            "comuna_nombre": "General Lagos",
+            "region": 15
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 325,
+        "fields": {
+            "comuna_nombre": "Cobquecura",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 326,
+        "fields": {
+            "comuna_nombre": "Coelemu",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 327,
+        "fields": {
+            "comuna_nombre": "Ninhue",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 328,
+        "fields": {
+            "comuna_nombre": "Portezuelo",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 329,
+        "fields": {
+            "comuna_nombre": "Quirihue",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 330,
+        "fields": {
+            "comuna_nombre": "Ránquil",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 331,
+        "fields": {
+            "comuna_nombre": "Treguaco",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 332,
+        "fields": {
+            "comuna_nombre": "Bulnes",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 333,
+        "fields": {
+            "comuna_nombre": "Chillán Viejo",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 334,
+        "fields": {
+            "comuna_nombre": "Chillán",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 335,
+        "fields": {
+            "comuna_nombre": "El Carmen",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 336,
+        "fields": {
+            "comuna_nombre": "Pemuco",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 337,
+        "fields": {
+            "comuna_nombre": "Pinto",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 338,
+        "fields": {
+            "comuna_nombre": "Quillón",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 339,
+        "fields": {
+            "comuna_nombre": "San Ignacio",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 340,
+        "fields": {
+            "comuna_nombre": "Yungay",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 341,
+        "fields": {
+            "comuna_nombre": "Coihueco",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 342,
+        "fields": {
+            "comuna_nombre": "Ñiquén",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 343,
+        "fields": {
+            "comuna_nombre": "San Carlos",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 344,
+        "fields": {
+            "comuna_nombre": "San Fabián",
+            "region": 16
+        }
+    },
+    {
+        "model": "proyecto_arriendos_crud.comuna",
+        "pk": 345,
+        "fields": {
+            "comuna_nombre": "San Nicolás",
+            "region": 16
+        }
+    }    
 ]
