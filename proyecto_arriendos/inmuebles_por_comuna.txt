@@ -1,0 +1,58 @@
+Comuna: Chañaral
+-----------------------------------------------
+Nombre: Bello Departamento
+Descripción: Acogedor departamento de 2 ambientes
+
+Comuna: Corral
+-----------------------------------------------
+Nombre: Chalet en la Montaña
+Descripción: Hermoso chalet con vistas panorámicas
+
+Comuna: La Pintana
+-----------------------------------------------
+Nombre: Loft Urbano
+Descripción: Espacio abierto en el corazón de la ciudad
+
+Comuna: Lo Barnechea
+-----------------------------------------------
+Nombre: Terreno Industrial
+Descripción: Amplio terreno apto para industria
+
+Comuna: Quilicura
+-----------------------------------------------
+Nombre: Cabaña de Playa
+Descripción: Encantadora cabaña cerca del mar
+
+Comuna: San Juan de la Costa
+-----------------------------------------------
+Nombre: Penthouse con Vista al Mar
+Descripción: Elegante penthouse con vistas al mar
+
+Comuna: Sierra Gorda
+-----------------------------------------------
+Nombre: Departamento Moderno
+Descripción: Espacioso departamento con diseño moderno
+
+Comuna: Teodoro Schmidt
+-----------------------------------------------
+Nombre: Oficina Ejecutiva
+Descripción: Espacio ideal para oficinas ejecutivas
+
+Comuna: Villa Alemana
+-----------------------------------------------
+Nombre: Casa de Campo
+Descripción: Acogedora casa de campo
+
+Comuna: Yerbas Buenas
+-----------------------------------------------
+Nombre: Preciosa Casa de un Piso
+Descripción: Amplio patio y antejardín
+
+Comuna: Ñuñoa
+-----------------------------------------------
+Nombre: Departamento en Ñuñoa
+Descripción: Amplio departamento en grato barrio
+
+Nombre: Departamento de dos pisos
+Descripción: Amplio departamento con orientación sur
+

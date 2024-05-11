@@ -8,16 +8,6 @@ Este proyecto consiste en la creación de un sitio web dedicado al arriendo de i
 
 El archivo [proyecto_arriendos.jpg](proyecto_arriendos.jpg) contiene el modelo entidad-relación físico de la base de datos del proyecto. Este archivo muestra la estructura de las tablas y las relaciones entre ellas, lo que proporciona una visión clara de cómo se organizarán y almacenarán los datos en el sistema.
 
-## Datos de Prueba
-
-Para poblar la base de datos con datos de prueba, se proporciona varios archivos JSON llamados `datos_regiones.json`, `datos_comunas.json`, `datos_direcciones.json`, `datos_usuarios.json`, `datos_inmuebles.json`, `datos_solicitudes.json`. Puedes cargar estos datos utilizando el comando `loaddata` de Django:
-
-```bash
-python manage.py loaddata datos_prueba.json
-```
-
-Esto insertará los registros de prueba en la base de datos y te permitirá comenzar a explorar la aplicación con datos preexistentes.
-
 ## Hitos
 
 El proyecto está dividido en 5 etapas:
@@ -28,7 +18,24 @@ En este primer hito del proyecto, se establece la base para el desarrollo del si
 
 ### Funcionalidades para usuarios tipo arrendatario
 
-completar
+Para poblar la base de datos con datos de prueba, se proporciona varios archivos JSON llamados `datos_regiones.json`, `datos_comunas.json`, `datos_direcciones.json`, `datos_usuarios.json`, `datos_inmuebles.json`, `datos_solicitudes.json`. Puedes cargar estos datos utilizando el comando `loaddata` de Django:
+
+```bash
+python manage.py loaddata datos_regiones.json
+python manage.py loaddata datos_comunas.json
+python manage.py loaddata datos_direcciones.json
+python manage.py loaddata datos_usuarios.json
+python manage.py loaddata datos_inmuebles.json
+python manage.py loaddata datos_solicitudes.json
+```
+
+Además existen 2 funciones en el archivo `scripts.py`, ubicado en la carpeta de la apliación. Dichas funciones retornarán los inmuebles disponibles, tanto por comuna como por región. Las consultas realizadas con el ORM de Django se almacenan automáticamente en los archivos `consultar_inmuebles_por_comuna.json`, `consultar_inmuebles_por_comuna.txt`, `consultar_inmuebles_por_region.json` y `consultar_inmuebles_por_region.txt`, los cuales quedan disponibles en la carpeta raíz del proyecto.
+
+```bash
+python manage.py shell
+from nombre_de_tu_app.scripts import consultar_inmuebles_por_comuna, consultar_inmuebles_por_region
+python manage.py loaddata datos_comunas.json
+```
 
 ### Funcionalidades para usuarios tipo arrendador
 

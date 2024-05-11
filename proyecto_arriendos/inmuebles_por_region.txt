@@ -1,0 +1,63 @@
+Región: II Región Antofagasta
+-----------------------------------------------
+Nombre: Departamento Moderno
+Descripción: Espacioso departamento con diseño moderno
+Comuna: Sierra Gorda
+
+Región: III Región de Atacama
+-----------------------------------------------
+Nombre: Bello Departamento
+Descripción: Acogedor departamento de 2 ambientes
+Comuna: Chañaral
+
+Región: IX Región de La Araucanía
+-----------------------------------------------
+Nombre: Oficina Ejecutiva
+Descripción: Espacio ideal para oficinas ejecutivas
+Comuna: Teodoro Schmidt
+
+Región: Región Metropolitana de Santiago
+-----------------------------------------------
+Nombre: Loft Urbano
+Descripción: Espacio abierto en el corazón de la ciudad
+Comuna: La Pintana
+
+Nombre: Terreno Industrial
+Descripción: Amplio terreno apto para industria
+Comuna: Lo Barnechea
+
+Nombre: Departamento en Ñuñoa
+Descripción: Amplio departamento en grato barrio
+Comuna: Ñuñoa
+
+Nombre: Departamento de dos pisos
+Descripción: Amplio departamento con orientación sur
+Comuna: Ñuñoa
+
+Nombre: Casa de 2 Pisos
+Descripción: Encantadora casa familiar
+Comuna: Quilicura
+
+Región: V Región de Valparaíso
+-----------------------------------------------
+Nombre: Casa de Campo
+Descripción: Acogedora casa de campo
+Comuna: Villa Alemana
+
+Región: VII Región del Maule
+-----------------------------------------------
+Nombre: Preciosa Casa de un Piso
+Descripción: Amplio patio y antejardín
+Comuna: Yerbas Buenas
+
+Región: X Región de Los Lagos
+-----------------------------------------------
+Nombre: Penthouse con Vista al Mar
+Descripción: Elegante penthouse con vistas al mar
+Comuna: San Juan de la Costa
+
+Región: XIV Región de Los Ríos
+-----------------------------------------------
+Nombre: Chalet en la Montaña
+Descripción: Hermoso chalet con vistas panorámicas
+Comuna: Corral

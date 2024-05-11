@@ -1,0 +1,102 @@
+[
+    {
+        "region": "II Región Antofagasta",
+        "inmuebles": [
+            {
+                "nombre": "Departamento Moderno",
+                "descripcion": "Espacioso departamento con diseño moderno",
+                "comuna": "Sierra Gorda"
+            }
+        ]
+    },
+    {
+        "region": "III Región de Atacama",
+        "inmuebles": [
+            {
+                "nombre": "Bello Departamento",
+                "descripcion": "Acogedor departamento de 2 ambientes",
+                "comuna": "Chañaral"
+            }
+        ]
+    },
+    {
+        "region": "IX Región de La Araucanía",
+        "inmuebles": [
+            {
+                "nombre": "Oficina Ejecutiva",
+                "descripcion": "Espacio ideal para oficinas ejecutivas",
+                "comuna": "Teodoro Schmidt"
+            }
+        ]
+    },
+    {
+        "region": "Región Metropolitana de Santiago",
+        "inmuebles": [
+            {
+                "nombre": "Loft Urbano",
+                "descripcion": "Espacio abierto en el corazón de la ciudad",
+                "comuna": "La Pintana"
+            },
+            {
+                "nombre": "Terreno Industrial",
+                "descripcion": "Amplio terreno apto para industria",
+                "comuna": "Lo Barnechea"
+            },
+            {
+                "nombre": "Departamento en Ñuñoa",
+                "descripcion": "Amplio departamento en grato barrio",
+                "comuna": "Ñuñoa"
+            },
+            {
+                "nombre": "Departamento de dos pisos",
+                "descripcion": "Amplio departamento con orientación sur",
+                "comuna": "Ñuñoa"
+            },
+            {
+                "nombre": "Casa de 2 Pisos",
+                "descripcion": "Encantadora casa familiar",
+                "comuna": "Quilicura"
+            }
+        ]
+    },
+    {
+        "region": "V Región de Valparaíso",
+        "inmuebles": [
+            {
+                "nombre": "Casa de Campo",
+                "descripcion": "Acogedora casa de campo",
+                "comuna": "Villa Alemana"
+            }
+        ]
+    },
+    {
+        "region": "VII Región del Maule",
+        "inmuebles": [
+            {
+                "nombre": "Preciosa Casa de un Piso",
+                "descripcion": "Amplio patio y antejardín",
+                "comuna": "Yerbas Buenas"
+            }
+        ]
+    },
+    {
+        "region": "X Región de Los Lagos",
+        "inmuebles": [
+            {
+                "nombre": "Penthouse con Vista al Mar",
+                "descripcion": "Elegante penthouse con vistas al mar",
+                "comuna": "San Juan de la Costa"
+            }
+        ]
+    },
+    {
+        "region": "XIV Región de Los Ríos",
+        "inmuebles": [
+            {
+                "nombre": "Chalet en la Montaña",
+                "descripcion": "Hermoso chalet con vistas panorámicas",
+                "comuna": "Corral"
+            }
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "comuna": "Chañaral",
+        "inmuebles": [
+            {
+                "nombre": "Bello Departamento",
+                "descripcion": "Acogedor departamento de 2 ambientes"
+            }
+        ]
+    },
+    {
+        "comuna": "Corral",
+        "inmuebles": [
+            {
+                "nombre": "Chalet en la Montaña",
+                "descripcion": "Hermoso chalet con vistas panorámicas"
+            }
+        ]
+    },
+    {
+        "comuna": "La Pintana",
+        "inmuebles": [
+            {
+                "nombre": "Loft Urbano",
+                "descripcion": "Espacio abierto en el corazón de la ciudad"
+            }
+        ]
+    },
+    {
+        "comuna": "Lo Barnechea",
+        "inmuebles": [
+            {
+                "nombre": "Terreno Industrial",
+                "descripcion": "Amplio terreno apto para industria"
+            }
+        ]
+    },
+    {
+        "comuna": "Quilicura",
+        "inmuebles": [
+            {
+                "nombre": "Cabaña de Playa",
+                "descripcion": "Encantadora cabaña cerca del mar"
+            }
+        ]
+    },
+    {
+        "comuna": "San Juan de la Costa",
+        "inmuebles": [
+            {
+                "nombre": "Penthouse con Vista al Mar",
+                "descripcion": "Elegante penthouse con vistas al mar"
+            }
+        ]
+    },
+    {
+        "comuna": "Sierra Gorda",
+        "inmuebles": [
+            {
+                "nombre": "Departamento Moderno",
+                "descripcion": "Espacioso departamento con diseño moderno"
+            }
+        ]
+    },
+    {
+        "comuna": "Teodoro Schmidt",
+        "inmuebles": [
+            {
+                "nombre": "Oficina Ejecutiva",
+                "descripcion": "Espacio ideal para oficinas ejecutivas"
+            }
+        ]
+    },
+    {
+        "comuna": "Villa Alemana",
+        "inmuebles": [
+            {
+                "nombre": "Casa de Campo",
+                "descripcion": "Acogedora casa de campo"
+            }
+        ]
+    },
+    {
+        "comuna": "Yerbas Buenas",
+        "inmuebles": [
+            {
+                "nombre": "Preciosa Casa de un Piso",
+                "descripcion": "Amplio patio y antejardín"
+            }
+        ]
+    },
+    {
+        "comuna": "Ñuñoa",
+        "inmuebles": [
+            {
+                "nombre": "Departamento en Ñuñoa",
+                "descripcion": "Amplio departamento en grato barrio"
+            },
+            {
+                "nombre": "Departamento de dos pisos",
+                "descripcion": "Amplio departamento con orientación sur"
+            }
+        ]
+    }
+]
