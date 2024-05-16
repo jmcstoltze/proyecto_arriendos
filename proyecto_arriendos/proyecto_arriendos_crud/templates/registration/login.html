@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="login"> 
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-sm-12 col-12 pb-5 pt-5">
+                
+                <!-- Formulario de inicio de sesión -->
+                <h2>Inicio de sesión</h2>
+                <hr>
+                {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+                {% endif %}
+                <form id="formulario" action="{% url 'login' %}" method="post">                                        
+                    {% csrf_token %}
+    
+                    <div class="mb-3">                        
+                        <label for="id_username" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="id_username" name="username" placeholder="Ingresa tu nombre de usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="id_password" name="password" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </form>            
+            </div>                      
+        </div>
+    </content>     
+</div>
+{% endblock %}

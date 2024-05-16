@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"] ########################
 
+# Redireccionamiento tras el login y logout
+
+# LOGIN | LOGOUT REDIRECT URLS
+LOGIN_REDIRECT_URL = '/bienvenido'
+LOGOUT_REDIRECT_URL = '/'
+
 
 # Application definition
 
