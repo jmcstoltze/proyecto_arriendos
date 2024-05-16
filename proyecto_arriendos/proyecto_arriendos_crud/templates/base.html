@@ -42,9 +42,13 @@
                             </li>
                         {% else %}                        
                             <li class="nav-item p-3">
-                                <!-- <a class="nav-link nav-login-logout" href="{% url 'login' %}?next={{request.path}}">Iniciar sesión</a> -->
-                                <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+                                <a class="nav-link nav-login-logout" href="{% url 'login' %}?next={{request.path}}">Iniciar sesión</a>
+                                
+                                <!-- <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a> -->
+                                
                                 <!-- <a class="nav-link" href="/registration/login">Iniciar sesión</a> -->
+                                
+                                
                                 <p><a href="/registro">¿No estás registrado? Crea una cuenta</a></p>
                                 
                             </li>

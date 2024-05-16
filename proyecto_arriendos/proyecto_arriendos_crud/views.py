@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
+
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
+
 from django.contrib.auth import authenticate, login
 
 from django.views.generic import TemplateView
@@ -10,7 +13,8 @@ from .models import Usuario, Comuna, Direccion
 
 # Create your views here.
 
-def loginView(request):
+'''
+def login(request):
 
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -23,22 +27,22 @@ def loginView(request):
             # Usuario no válido, puedes manejar esto de varias maneras, por ejemplo, mostrando un mensaje de error
             return render(request, 'registration/login.html', {'error': 'Nombre de usuario o contraseña incorrectos'})
     else:
-        return render(request, "registration/login.html", {})
+        return render(request, "registration/login.html", {})'''
 
 
-def indiceView(request):
+def indice(request):
 
     # Lógica a implementar
 
     return render(request, "indice.html", {})
 
-def bienvenidoView(request):
+def bienvenido(request):
 
     # Lógica a implementar
 
     return render(request, "bienvenido.html", {})
 
-def registroView(request):
+def registro(request):
 
     comunas = Comuna.objects.all() # Trae todas las comunas desde la DB
 
@@ -98,5 +102,5 @@ class LoginRequiredMixin(View):
         return super().dispatch(*args, **kwargs)
 
 class Welcome(LoginRequiredMixin, TemplateView):
-    template_name = "welcome.html"
+    template_name = "bienvenido.html"
     
