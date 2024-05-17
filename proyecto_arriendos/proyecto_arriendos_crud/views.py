@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 
-from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
 
 from django.views.generic import TemplateView
 from django.views import View
@@ -38,9 +38,55 @@ def indice(request):
 
 def bienvenido(request):
 
-    # Lógica a implementar
+    usuario_personalizado = Usuario.objects.get(user=request.user)
+    direccion = usuario_personalizado.direccion
 
-    return render(request, "bienvenido.html", {})
+    contexto = {
+        'user': request.user,
+        'usuario_personalizado': usuario_personalizado,
+        'direccion': direccion
+    }
+
+    return render(request, "bienvenido.html", contexto)
+
+def datos_usuario(request):
+
+    usuario_personalizado = Usuario.objects.get(user=request.user)
+    direccion = usuario_personalizado.direccion
+    comunas = Comuna.objects.all()
+    
+    if request.method == 'POST':
+
+        # Actualizar datos del usuario
+        usuario_personalizado.user.username = request.POST.get('username', usuario_personalizado.user.username)
+        # No se trabaja con contraseña
+        
+        usuario_personalizado.user.first_name = request.POST.get('first_name', usuario_personalizado.user.first_name)
+        usuario_personalizado.first_name = request.POST.get('first_name', usuario_personalizado.user.first_name)
+        
+        usuario_personalizado.user.last_name = request.POST.get('last_name', usuario_personalizado.user.last_name)
+        usuario_personalizado.last_name = request.POST.get('last_name', usuario_personalizado.user.last_name)
+
+        usuario_personalizado.user.email = request.POST.get('email', usuario_personalizado.user.email)
+        usuario_personalizado.email = request.POST.get('email', usuario_personalizado.user.email)
+
+        usuario_personalizado.user.save()
+
+        # Actualizar datos del usuario personalizado
+        usuario_personalizado.telefono = request.POST.get('telefono', usuario_personalizado.telefono)
+        usuario_personalizado.tipo_usuario = request.POST.get('tipo_usuario', usuario_personalizado.tipo_usuario)
+        usuario_personalizado.save()
+
+        # Actualizar la dirección
+        direccion.calle = request.POST.get('calle', direccion.calle)
+        direccion.numero = request.POST.get('numero', direccion.numero)
+        direccion.depto = request.POST.get('depto', direccion.depto)  # Departamento es opcional
+        direccion.comuna_id = request.POST.get('comuna', direccion.comuna_id)
+        direccion.save()
+
+        return redirect('bienvenido')
+
+    return render(request, 'datos_usuario.html', {'usuario_personalizado': usuario_personalizado, 'comunas': comunas})
 
 def registro(request):
 
@@ -74,9 +120,20 @@ def registro(request):
         telefono = request.POST.get('telefono')
         email = request.POST.get('email')
         tipo_usuario = request.POST.get('tipo_usuario')
+
+        # Crear un nuevo usuario (auth_user) y asignar la dirección creada
+        nuevo_usuario = User.objects.create_user(
+            username=username,
+            password=password,
+            first_name=first_name,
+            last_name=last_name,
+            email=email
+        )
+
+        nuevo_usuario.save()     # Guarda al usuario en la tabla auth_user
         
         # Crear un nuevo usuario y asignar la dirección creada
-        nuevo_usuario = Usuario.objects.create(
+        nuevo_usuario_personalizado = Usuario.objects.create(
             username=username,
             password=password,
             first_name=first_name,
@@ -85,10 +142,11 @@ def registro(request):
             direccion=nueva_direccion,
             email=email,
             telefono=telefono,
-            tipo_usuario=tipo_usuario
+            tipo_usuario=tipo_usuario,
+            user=nuevo_usuario            
         )
-
-        nuevo_usuario.save()
+                        
+        nuevo_usuario_personalizado.save()      # Guarda al usuario en la tabla personalizada Usuario
 
         return redirect('indice')
     else:

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="registro">        
+        <div class="form-container">
+            <h2 class="text-center mb-4">Actualizar datos de usuario</h2>
+            <div class="container">                                      
+
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <!-- Nombre de Usuario (username) -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de Usuario:</label>
+                        <input type="text" placeholder="Ingrese nombre de usuario" class="form-control" id="username" name="username" value="{{ usuario_personalizado.user.username }}" disabled required>
+                    </div>                    
+                    <!-- Nombres del Usuario -->
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">Nombres:</label>
+                        <input type="text" placeholder="Ingrese nombres" class="form-control" id="first_name" name="first_name" value="{{ usuario_personalizado.user.first_name }}" required>
+                    </div>
+                    <!-- Apellidos del Usuario -->
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Apellidos:</label>
+                        <input type="text" placeholder="Ingrese apellidos" class="form-control" id="last_name" name="last_name" value="{{ usuario_personalizado.user.last_name }}" required>
+                    </div>
+                    <!-- Rut -->
+                    <div class="mb-3">
+                        <label for="rut" class="form-label">Rut:</label>
+                        <input type="text" value="{{ usuario_personalizado.rut }}" class="form-control" id="rut" name="rut" disabled maxlength="9">
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="{{ usuario_personalizado.user.email }}" placeholder="Ingrese email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" value="{{ usuario_personalizado.telefono }}" placeholder="Ingrese teléfono" class="form-control" id="telefono" name="telefono" required maxlength="30">
+                    </div>
+                    <!-- Tipo de Usuario -->
+                    <div class="mb-3">
+                        <label for="tipo_usuario" class="form-label">Tipo de Usuario:</label>
+                        <select class="form-select" id="tipo_usuario" name="tipo_usuario" required>
+                            <option value="{{ usuario_personalizado.tipo_usuario }}" selected disabled>{{ usuario_personalizado.tipo_usuario }}</option>
+                            <option value="arrendatario">Arrendatario</option>
+                            <option value="arrendador">Arrendador</option>
+                        </select>
+                    </div>                    
+                    <h4>Dirección</h4>
+                    <!-- Campo oculto para el ID de la dirección -->
+                    <div>
+                        <input type="hidden" id="direccion_id" name="direccion_id">
+                    </div>
+                    <!-- Calle -->
+                    <div class="mb-3">
+                        <label for="calle" class="form-label">Calle:</label>
+                        <input type="text" value="{{ usuario_personalizado.direccion.calle }}" placeholder="Ingrese calle" class="form-control" id="calle" name="calle" required>
+                    </div>
+                    <!-- Número -->
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número:</label>
+                        <input type="text" value="{{ usuario_personalizado.direccion.numero }}" placeholder="Ingrese número" class="form-control" id="numero" name="numero" required>
+                    </div>
+                    <!-- Departamento (opcional) -->
+                    <div class="mb-3">
+                        <label for="depto" class="form-label">Departamento:</label>
+                        <input type="text" value="{{ usuario_personalizado.direccion.depto }}" placeholder="Ingrese departamento (opcional)" class="form-control" id="depto" name="depto">
+                    </div>
+                    <!-- Comuna -->
+                    <div class="mb-3">
+                        <label for="comuna" class="form-label">Comuna:</label>
+                        <select class="form-select" id="comuna" name="comuna" required>
+                            <option value="" selected disabled>{{ usuario_personalizado.direccion.comuna.comuna_nombre }}</option>
+                            <!-- Iterar sobre las comunas disponibles -->
+                            {% for comuna in comunas %}
+                                <option value="{{ comuna.id }}">{{ comuna.comuna_nombre }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>                   
+                    
+                    <!-- Botón de Registro -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </content>
+</div>
+{% endblock %}

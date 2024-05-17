@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractUser, Group, Permission
+from django.contrib.auth.models import User, AbstractUser, Group, Permission
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
@@ -56,6 +56,8 @@ class Usuario(AbstractUser):
         ('arrendatario', 'Arrendatario'),
         ('arrendador', 'Arrendador')
     ]
+    # username = models.CharField(max_length=150, unique=True, null=False, blank=False)
+    # password = models.CharField(max_length=128, null=False, blank=False)
 
     rut = models.IntegerField(null=False, blank=False)
     # first_name = models.CharField(max_length=150, null=False, blank=False)  ### NO ES NECESARIO DEFINIR, VIENE DADO POR DEFECTO
@@ -73,13 +75,24 @@ class Usuario(AbstractUser):
     tipo_usuario = models.CharField(max_length=80, choices=TIPO_CHOICES, null=False, blank=False)
     created_at = models.DateTimeField(default=timezone.now)
 
+    # Agrega un valor predeterminado al campo user_ptr
+    '''
+    user_ptr = models.OneToOneField(
+        'auth.User',
+        on_delete=models.CASCADE,
+        parent_link=True,
+        default=None
+    )'''
+
+    user = models.OneToOneField(User, on_delete=models.PROTECT) # linkea con un user del modelo por defecto de django
+
     user_permissions = models.ManyToManyField(
         Permission,
         verbose_name=_('user permissions'),
         blank=True,
         related_name='custom_user_permissions'
     )
-
+    
     groups = models.ManyToManyField(
         Group,
         verbose_name=_('groups'),

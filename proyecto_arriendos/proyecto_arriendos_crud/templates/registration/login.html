@@ -9,11 +9,7 @@
                 <!-- Formulario de inicio de sesión -->
                 <h2>Inicio de sesión</h2>
                 <hr>
-                {% if error %}
-                <div class="alert alert-danger" role="alert">
-                    {{ error }}
-                </div>
-                {% endif %}
+                
                 <form id="formulario" action="{% url 'login' %}" method="post">                                        
                     {% csrf_token %}
     

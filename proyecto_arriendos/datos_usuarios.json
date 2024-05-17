@@ -11,7 +11,8 @@
       "direccion": 3,
       "telefono": "111111111",
       "email": "luis@example.com",
-      "tipo_usuario": "arrendador"
+      "tipo_usuario": "arrendador",
+      "user_id": 1
     }
   },
   {
@@ -26,7 +27,8 @@
       "direccion": 6,
       "telefono": "222222222",
       "email": "ana@example.com",
-      "tipo_usuario": "arrendatario"
+      "tipo_usuario": "arrendatario",
+      "user_id": 2
     }
   },
   {
@@ -41,7 +43,8 @@
       "direccion": 10,
       "telefono": "333333333",
       "email": "carlos@example.com",
-      "tipo_usuario": "arrendatario"
+      "tipo_usuario": "arrendatario",
+      "user_id": 3
     }
   },
   {
@@ -56,7 +59,8 @@
       "direccion": 15,
       "telefono": "444444444",
       "email": "maria@example.com",
-      "tipo_usuario": "arrendador"
+      "tipo_usuario": "arrendador",
+      "user_id": 4
     }
   },
   {
@@ -71,7 +75,8 @@
       "direccion": 18,
       "telefono": "555555555",
       "email": "juan@example.com",
-      "tipo_usuario": "arrendador"
+      "tipo_usuario": "arrendador",
+      "user_id": 5
     }
   },
   {
@@ -86,7 +91,8 @@
       "direccion": 2,
       "telefono": "666666666",
       "email": "andrea@example.com",
-      "tipo_usuario": "arrendatario"
+      "tipo_usuario": "arrendatario",
+      "user_id": 6
     }
   },
   {
@@ -101,7 +107,8 @@
       "direccion": 7,
       "telefono": "777777777",
       "email": "javier@example.com",
-      "tipo_usuario": "arrendatario"
+      "tipo_usuario": "arrendatario",
+      "user_id": 7
     }
   },
   {
@@ -116,7 +123,8 @@
       "direccion": 12,
       "telefono": "888888888",
       "email": "patricia@example.com",
-      "tipo_usuario": "arrendatario"
+      "tipo_usuario": "arrendatario",
+      "user_id": 8
     }
   },
   {
@@ -131,7 +139,8 @@
       "direccion": 16,
       "telefono": "999999999",
       "email": "roberto@example.com",
-      "tipo_usuario": "arrendador"
+      "tipo_usuario": "arrendador",
+      "user_id": 9
     }
   },
   {
@@ -146,7 +155,8 @@
       "direccion": 20,
       "telefono": "101010101",
       "email": "marta@example.com",
-      "tipo_usuario": "arrendador"
+      "tipo_usuario": "arrendador",
+      "user_id": 10
     }
   }
 ]

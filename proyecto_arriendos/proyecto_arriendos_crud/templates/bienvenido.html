@@ -3,8 +3,14 @@
 {% block 'content' %}
 <div>
     <content id="bienvenido">
-        
-        <h3>Bienvenido Usuario - Página de Bienvenida</h3>      
+        <h3>Bienvenido {{ user.first_name }} {{ user.last_name }} - Página de Bienvenida</h3>
+        <p>Username: {{ user.username }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>RUT: {{ usuario_personalizado.rut }}</p>
+        <p>Dirección: {{ direccion.calle }}, {{ direccion.numero }}{% if direccion.depto %}, {{ direccion.depto }}{% endif %}, {{ direccion.comuna.comuna_nombre }} ({{ direccion.comuna.region.region_nombre }})</p>
+        <p>Teléfono: {{ usuario_personalizado.telefono }}</p>
+        <p>Tipo de Usuario: <strong>{{ usuario_personalizado.tipo_usuario }}</strong></p>
+        <p><a href="{% url 'datos_usuario' %}">Modificar datos de usuario</a></p>
     </content>
 </div>
 {% endblock %}

@@ -18,14 +18,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from proyecto_arriendos_crud.views import indice, bienvenido, registro # login
+from proyecto_arriendos_crud.views import indice, bienvenido, registro, datos_usuario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', indice, name="indice"),
     path('home', indice, name="indice"),
     path('registro', registro, name="registro"),
-    # path('registration/login', login, name="login"),
+    path('datos_usuario', datos_usuario, name="datos_usuario"),
     path('bienvenido', bienvenido, name="bienvenido"),
     path('accounts/', include('django.contrib.auth.urls'))
 ]

@@ -34,7 +34,7 @@ LOGIN_REDIRECT_URL = '/bienvenido'
 LOGOUT_REDIRECT_URL = '/'
 
 # Configura la autentiación con modelo Usuario
-AUTH_USER_MODEL = 'proyecto_arriendos_crud.Usuario'
+# AUTH_USER_MODEL = 'proyecto_arriendos_crud.Usuario'
 
 # Application definition
 

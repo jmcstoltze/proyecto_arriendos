@@ -1,0 +1,132 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "contrasena_luis",
+      "username": "luis_martinez",
+      "email": "luis@example.com",
+      "first_name": "Luis",
+      "last_name": "Martinez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "contrasena_ana",
+      "username": "ana_gonzalez",
+      "email": "ana@example.com",
+      "first_name": "Ana",
+      "last_name": "Gonzalez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "contrasena_carlos",
+      "username": "carlos_rodriguez",
+      "email": "carlos@example.com",
+      "first_name": "Carlos",
+      "last_name": "Rodriguez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "contrasena_maria",
+      "username": "maria_perez",
+      "email": "maria@example.com",
+      "first_name": "Maria",
+      "last_name": "Perez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "contrasena_juan",
+      "username": "juan_diaz",
+      "email": "juan@example.com",
+      "first_name": "Juan",
+      "last_name": "Diaz",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "contrasena_andrea",
+      "username": "andrea_sanchez",
+      "email": "andrea@example.com",
+      "first_name": "Andrea",
+      "last_name": "Sanchez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "contrasena_javier",
+      "username": "javier_gomez",
+      "email": "javier@example.com",
+      "first_name": "Javier",
+      "last_name": "Gomez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "password": "contrasena_patricia",
+      "username": "patricia_lopez",
+      "email": "patricia@example.com",
+      "first_name": "Patricia",
+      "last_name": "Lopez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "password": "contrasena_roberto",
+      "username": "roberto_hernandez",
+      "email": "roberto@example.com",
+      "first_name": "Roberto",
+      "last_name": "Hernandez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "password": "contrasena_marta",
+      "username": "marta_alvarez",
+      "email": "marta@example.com",
+      "first_name": "Marta",
+      "last_name": "Alvarez",
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  }
+]

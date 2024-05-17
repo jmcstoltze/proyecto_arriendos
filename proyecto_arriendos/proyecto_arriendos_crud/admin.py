@@ -142,4 +142,3 @@ class SolicitudAdmin(admin.ModelAdmin):
         return response
 
     export_to_csv.short_description = "Exportar a CSV"
-
