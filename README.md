@@ -16,7 +16,7 @@ El proyecto está dividido en 5 etapas:
 
 En este primer hito del proyecto, se establece la base para el desarrollo del sitio web de arriendo de inmuebles. Se configura el entorno de desarrollo integrado por Django y PostgreSQL, asegurando que el ambiente cuente con todas las herramientas necesarias para la creación del proyecto. Además, se define el modelo de datos utilizando el framework Django, representando el modelo relacional de la base de datos y estableciendo la conexión con PostgreSQL. Se implementan operaciones CRUD en los modelos para la manipulación de datos, permitiendo la creación, lectura, actualización y eliminación de registros dentro del sistema. Este hito sienta las bases técnicas necesarias para la construcción de la aplicación y garantiza que el proyecto esté listo para avanzar a etapas posteriores.
 
-### 2. Funcionalidades para usuarios tipo arrendatario
+### 2. Funcionalidades para poblar las tablas del modelo y realizar consultas
 
 Para poblar la base de datos con datos de prueba, se proporciona varios archivos JSON llamados `datos_regiones.json`, `datos_comunas.json`, `datos_direcciones.json`, `datos_usuarios.json`, `datos_inmuebles.json`, `datos_solicitudes.json`. Puedes cargar estos datos utilizando el comando `loaddata` de Django:
 
@@ -37,9 +37,9 @@ from nombre_de_tu_app.scripts import consultar_inmuebles_por_comuna, consultar_i
 python manage.py loaddata datos_comunas.json
 ```
 
-### 3. Funcionalidades para usuarios tipo arrendador
+### 3. Funcionalidades para usuarios tipo arrendador y arrendatario
 
-completar
+Se implementan vistas de registro y actualización de información de usuario, previamente implementada la opción de iniciar sesión en la página.
 
 ### 4. Implementación de vistas y formularios
 
