@@ -3,14 +3,31 @@
 {% block 'content' %}
 <div>
     <content id="bienvenido">
-        <h3>Bienvenido {{ user.first_name }} {{ user.last_name }} - Página de Bienvenida</h3>
-        <p>Username: {{ user.username }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>RUT: {{ usuario_personalizado.rut }}</p>
-        <p>Dirección: {{ direccion.calle }}, {{ direccion.numero }}{% if direccion.depto %}, {{ direccion.depto }}{% endif %}, {{ direccion.comuna.comuna_nombre }} ({{ direccion.comuna.region.region_nombre }})</p>
-        <p>Teléfono: {{ usuario_personalizado.telefono }}</p>
-        <p>Tipo de Usuario: <strong>{{ usuario_personalizado.tipo_usuario }}</strong></p>
-        <p><a href="{% url 'datos_usuario' %}">Modificar datos de usuario</a></p>
+        
+        <div>
+            <h3>Hola! {{ user.first_name }} {{ user.last_name }} - Página de Usuario</h3>
+            <p>Username: {{ user.username }}</p>
+            <p>Email: {{ user.email }}</p>
+            <p>RUT: {{ usuario_personalizado.rut }}</p>
+            <p>Dirección: {{ direccion.calle }}, {{ direccion.numero }}{% if direccion.depto %}, {{ direccion.depto }}{% endif %}, {{ direccion.comuna.comuna_nombre }} ({{ direccion.comuna.region.region_nombre }})</p>
+            <p>Teléfono: {{ usuario_personalizado.telefono }}</p>
+            <p>Tipo de Usuario: <strong>{{ usuario_personalizado.tipo_usuario }}</strong></p>
+            <p><a href="{% url 'datos_usuario' %}">Modificar datos de usuario</a></p>
+        </div>
+
+        {% if pertenece_arrendador %}
+        <div>
+            <p><a href="{% url 'agregar_inmueble' %}">Agregar Inmueble</a></p>
+            <p><a href="{% url 'inmuebles_arrendador' %}">Ver inmuebles ingresados</a></p>
+        </div>
+        {% endif %}
+
+        {% if pertenece_arrendatario %}
+        <div>
+            <p><a href="{% url 'ver_ofertas' %}">Ver ofertas disponibles</a></p>
+        </div>
+        {% endif %}
+        
     </content>
 </div>
 {% endblock %}

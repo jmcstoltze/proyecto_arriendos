@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="registro">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Actualizar datos del inmueble</h2>
+            <div class="container">
+
+                <form action="{% url 'actualizar_inmueble' inmueble.id %}" method="post">
+                    {% csrf_token %}
+                    <!-- Nombre del Inmueble -->
+                    <div class="mb-3">
+                        <label for="inmueble_nombre" class="form-label">Nombre del Inmueble:</label>
+                        <input type="text" placeholder="Ingrese nombre del inmueble" class="form-control" id="inmueble_nombre" name="inmueble_nombre" value="{{ inmueble.inmueble_nombre }}" required>
+                    </div>                    
+                    <!-- Descripción del Inmueble -->
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción:</label>
+                        <input type="text" placeholder="Ingrese descripción" class="form-control" id="descripcion" name="descripcion" value="{{ inmueble.descripcion }}" required>
+                    </div>
+                    <!-- Metros Cuadrados Construidos -->
+                    <div class="mb-3">
+                        <label for="m2_construidos" class="form-label">Metros Cuadrados Construidos:</label>
+                        <input type="number" placeholder="Ingrese m2 construidos" class="form-control" id="m2_construidos" name="m2_construidos" value="{{ inmueble.m2_construidos }}" required>
+                    </div>
+                    <!-- Metros Cuadrados de Terreno -->
+                    <div class="mb-3">
+                        <label for="m2_terreno" class="form-label">Metros Cuadrados de Terreno:</label>
+                        <input type="number" placeholder="Ingrese m2 de terreno" class="form-control" id="m2_terreno" name="m2_terreno" value="{{ inmueble.m2_terreno }}" required>
+                    </div>
+                    <!-- Cantidad de Estacionamientos -->
+                    <div class="mb-3">
+                        <label for="cantidad_estacionamientos" class="form-label">Cantidad de Estacionamientos:</label>
+                        <input type="number" placeholder="Ingrese cantidad de estacionamientos" class="form-control" id="cantidad_estacionamientos" name="cantidad_estacionamientos" value="{{ inmueble.cantidad_estacionamientos }}" required>
+                    </div>
+                    <!-- Cantidad de Habitaciones -->
+                    <div class="mb-3">
+                        <label for="cantidad_habitaciones" class="form-label">Cantidad de Habitaciones:</label>
+                        <input type="number" placeholder="Ingrese cantidad de habitaciones" class="form-control" id="cantidad_habitaciones" name="cantidad_habitaciones" value="{{ inmueble.cantidad_habitaciones }}" required>
+                    </div>
+                    <!-- Cantidad de Baños -->
+                    <div class="mb-3">
+                        <label for="cantidad_banios" class="form-label">Cantidad de Baños:</label>
+                        <input type="number" placeholder="Ingrese cantidad de baños" class="form-control" id="cantidad_banios" name="cantidad_banios" value="{{ inmueble.cantidad_banios }}" required>
+                    </div>
+                    <!-- Tipo de Inmueble -->
+                    <div class="mb-3">
+                        <label for="tipo_inmueble" class="form-label">Tipo de Inmueble:</label>
+                        <select class="form-select" id="tipo_inmueble" name="tipo_inmueble" required>
+                            <option value="{{ inmueble.tipo_inmueble }}" selected disabled>{{ inmueble.tipo_inmueble }}</option>
+                            <option value="casa">Casa</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="parcela">Parcela</option>
+                        </select>
+                    </div>                    
+                    <!-- Precio Mensual de Arriendo -->
+                    <div class="mb-3">
+                        <label for="precio_mensual_arriendo" class="form-label">Precio Mensual de Arriendo:</label>
+                        <input type="number" step="0.01" placeholder="Ingrese precio mensual de arriendo" class="form-control" id="precio_mensual_arriendo" name="precio_mensual_arriendo" value="{{ inmueble.precio_mensual_arriendo }}" required>
+                    </div>
+                    
+                    <h4>Dirección</h4>
+                    <!-- Calle -->
+                    <div class="mb-3">
+                        <label for="calle" class="form-label">Calle:</label>
+                        <input type="text" placeholder="Ingrese calle" class="form-control" id="calle" name="calle" value="{{ inmueble.direccion.calle }}" required>
+                    </div>
+                    <!-- Número -->
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número:</label>
+                        <input type="text" placeholder="Ingrese número" class="form-control" id="numero" name="numero" value="{{ inmueble.direccion.numero }}" required>
+                    </div>
+                    <!-- Departamento (opcional) -->
+                    <div class="mb-3">
+                        <label for="depto" class="form-label">Departamento:</label>
+                        <input type="text" placeholder="Ingrese departamento (opcional)" class="form-control" id="depto" name="depto" value="{{ inmueble.direccion.depto }}">
+                    </div>
+                    <!-- Comuna -->
+                    <div class="mb-3">
+                        <label for="comuna" class="form-label">Comuna:</label>
+                        <select class="form-select" id="comuna" name="comuna" required>
+                            <option value="" selected disabled>{{ inmueble.direccion.comuna.comuna_nombre }}</option>
+                            <!-- Iterar sobre las comunas disponibles -->
+                            {% for comuna in comunas %}
+                                <option value="{{ comuna.id }}">{{ comuna.comuna_nombre }}</option>
+                            {% endfor %}
+                        </select>
+                    </div> 
+                    <!-- Botón de Registro -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Actualizar Inmueble</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </content>
+</div>
+{% endblock %}

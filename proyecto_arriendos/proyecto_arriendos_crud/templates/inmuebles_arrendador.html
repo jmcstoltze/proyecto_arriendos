@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="inmuebles_arrendador">
+    
+        <h1>Listado de Inmuebles Ingresados</h1>
+        <p><strong>{{ user.first_name }} {{ user.last_name }},</strong> estos son tus inmuebles disponibles para arriendo:</h3>
+            
+        <ul>
+        {% for inmueble in inmuebles_arrendador %}
+            <li><u><i>{{ inmueble.inmueble_nombre }}</i></u></li>
+                <p>{{ inmueble.direccion.calle }}, {{ inmueble.direccion.numero }}
+                    {% if direccion.depto %}, {{ inmueble.direccion.depto }}{% endif %},
+                    {{ direccion.comuna.comuna_nombre }} ({{ inmueble.direccion.comuna.region.region_nombre }})</p>
+                <a href="{% url 'actualizar_inmueble' inmueble.id %}">Actualizar datos del inmueble | </a>
+                <a href="{% url 'eliminar_inmueble' inmueble.id %}">Eliminar el inmueble del listado</a>
+            
+                <hr>
+        {% endfor %}
+        </ul>
+        
+        
+    </content>
+</div>
+{% endblock %}

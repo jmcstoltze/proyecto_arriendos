@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="registro">
+        <p>Inmueble eliminado con éxito</p>
+        <a href="{% url 'inmuebles_arrendador' %}">Volver</a>
+    </content>
+</div>        
+{% endblock %}

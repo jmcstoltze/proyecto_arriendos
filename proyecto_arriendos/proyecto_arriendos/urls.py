@@ -18,14 +18,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from proyecto_arriendos_crud.views import indice, bienvenido, registro, datos_usuario
+from proyecto_arriendos_crud.views import indice, bienvenido, registro, datos_usuario, agregar_inmueble, ver_ofertas, inmuebles_arrendador, actualizar_inmueble, eliminar_inmueble
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', indice, name="indice"),
     path('home', indice, name="indice"),
     path('registro', registro, name="registro"),
-    path('datos_usuario', datos_usuario, name="datos_usuario"),
+    path('datos-usuario', datos_usuario, name="datos_usuario"),
     path('bienvenido', bienvenido, name="bienvenido"),
+    path('agregar_inmueble', agregar_inmueble, name="agregar_inmueble"),
+    path('inmuebles_arrendador', inmuebles_arrendador, name="inmuebles_arrendador"),
+    path('actualizar_inmueble/<int:inmueble_id>', actualizar_inmueble, name="actualizar_inmueble"),
+    path('eliminar_inmueble/<int:inmueble_id>', eliminar_inmueble, name="eliminar_inmueble"),
+    path('ver_ofertas', ver_ofertas, name="ver_ofertas"),
     path('accounts/', include('django.contrib.auth.urls'))
 ]
