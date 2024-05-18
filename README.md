@@ -4,6 +4,8 @@
 
 Este proyecto consiste en la creación de un sitio web dedicado al arriendo de inmuebles, donde los usuarios pueden buscar propiedades disponibles para arrendar, separadas por comuna y región. El sitio web cuenta con dos tipos de usuarios: arrendatarios y arrendadores, cada uno con funcionalidades específicas.
 
+ACLARACIÓN IMPORTANTE. En esta primera entrega general se trabajó fundamentalmente el Back End. Toda la parte de diseño del Front End está estructurado y mínimamente esbozado, por lo tanto, queda pendiente.
+
 ## Modelo Entidad-Relación
 
 El archivo [proyecto_arriendos.jpg](proyecto_arriendos.jpg) contiene el modelo entidad-relación físico de la base de datos del proyecto. Este archivo muestra la estructura de las tablas y las relaciones entre ellas, lo que proporciona una visión clara de cómo se organizarán y almacenarán los datos en el sistema.
@@ -43,9 +45,9 @@ Se implementan vistas de registro y actualización de información de usuario, p
 
 ### 4. Implementación de vistas y formularios
 
-- Usuarios 'arrendadores' y 'arrendatarios' son asignados automáticamente al grupo correspondiente en el panel de admnistración.
-- Usuarios 'arrendadores' pueden agregar, listar, actualizar y borrar inmuebles. Se implementan las vistas, rutas, funciones y formularios necesarios.
-- Usuarios 'arrendatarios' pueden ver ofertas disponibles, listándolas por región y/o comuna.
+- Usuarios 'arrendadores' y 'arrendatarios' son asignados automáticamente al grupo correspondiente en el panel de admnistración cuando se registran.
+- Usuarios 'arrendadores' pueden agregar, listar, actualizar y borrar sus inmuebles. Se implementan las vistas, rutas, funciones y formularios necesarios para ello.
+- Usuarios 'arrendatarios' pueden ver ofertas disponibles, filtrándolas por región, y luego por comuna.
 - Se adjuntan pantallazos del proceso y ejemplos en la carpeta `screenshots`, en la raíz del proyecto.
 
 ### 5. Integración y pruebas finales

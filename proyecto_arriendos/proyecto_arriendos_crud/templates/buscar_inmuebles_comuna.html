@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="inmuebles_arrendatario">
+    
+        <h3>Inmuebles Disponibles en {{ region.region_nombre }}</h3>
+
+        {% if selected_comuna %}
+            <p style="color:red">Resultados para comuna de {{ selected_comuna.comuna_nombre }} | Total de inmuebles encontrados: {{ inmuebles|length }} ítems</p>
+        {% endif %}
+
+        <a href="{% url 'bienvenido' %}">Volver menú principal</a>
+        <a href="{% url 'buscar_inmuebles_region' %}"> | Vover a buscar por región</a>
+        <p><strong>{{ user.first_name }} {{ user.last_name }},</strong> Realiza tu búsqueda por comuna:</p>
+            
+        <!-- Formulario de búsqueda -->
+        <form id="formulario_busqueda" method="GET" action="{% url 'buscar_inmuebles_comuna' region.id%}">
+            <div class="form-group">                
+                <select id="comuna" name="comuna" class="form-control">
+                    <option value="">Seleccione una comuna</option>
+                    {% for comuna in comunas %}
+                        <option value="{{ comuna.id }}">{{ comuna.comuna_nombre }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Buscar Inmuebles</button>
+
+            <ul class="mt-3">
+                {% for inmueble in inmuebles %}
+                    <li><u><i>{{ inmueble.inmueble_nombre }}</i></u></li>                        
+                    <p>Descripción: {{ inmueble.descripcion }} | Tipo de inmueble: {{ inmueble.tipo_inmueble }} | m2 Construidos: {{ inmueble.m2_construidos }} | m2 Terreno: {{ inmueble.m2_terreno }}  | Cantidad de habitaciones: {{ inmueble.cantidad_habitaciones }} | Cantidad de baños: {{ inmueble.cantidad_banios }} | Estacionamientos: {{ inmueble.cantidad_estacionamientos }}</p>
+                    <p><strong>Dirección: {{ inmueble.direccion.calle }}, {{ inmueble.direccion.numero }}
+                        {% if inmueble.direccion.depto %}, {{ inmueble.direccion.depto }}{% endif %},
+                        {{ inmueble.direccion.comuna.comuna_nombre }} ({{ inmueble.direccion.comuna.region.region_nombre }})</strong></p>                    
+                    <hr>
+                {% endfor %}
+            </ul>
+        </form>             
+    </content>
+</div>
+{% endblock %}

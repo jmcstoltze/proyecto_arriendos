@@ -18,7 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from proyecto_arriendos_crud.views import indice, bienvenido, registro, datos_usuario, agregar_inmueble, ver_ofertas, inmuebles_arrendador, actualizar_inmueble, eliminar_inmueble
+from proyecto_arriendos_crud.views import indice, bienvenido, registro, datos_usuario, agregar_inmueble, inmuebles_arrendador, actualizar_inmueble, eliminar_inmueble, buscar_inmuebles_region, buscar_inmuebles_comuna
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,6 +31,7 @@ urlpatterns = [
     path('inmuebles_arrendador', inmuebles_arrendador, name="inmuebles_arrendador"),
     path('actualizar_inmueble/<int:inmueble_id>', actualizar_inmueble, name="actualizar_inmueble"),
     path('eliminar_inmueble/<int:inmueble_id>', eliminar_inmueble, name="eliminar_inmueble"),
-    path('ver_ofertas', ver_ofertas, name="ver_ofertas"),
+    path('buscar_inmuebles_region', buscar_inmuebles_region, name="buscar_inmuebles_region"),
+    path('buscar_inmuebles_comuna/<int:region_id>/', buscar_inmuebles_comuna, name="buscar_inmuebles_comuna"),
     path('accounts/', include('django.contrib.auth.urls'))
 ]

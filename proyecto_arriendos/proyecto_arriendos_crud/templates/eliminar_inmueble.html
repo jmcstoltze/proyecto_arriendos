@@ -3,8 +3,9 @@
 {% block 'content' %}
 <div>
     <content id="registro">
-        <p>Inmueble eliminado con éxito</p>
+        <h3>Inmueble eliminado con éxito</h3>
         <a href="{% url 'inmuebles_arrendador' %}">Volver</a>
+        <a href="{% url 'bienvenido' %}"> | Volver al menú principal</a>
     </content>
 </div>        
 {% endblock %}

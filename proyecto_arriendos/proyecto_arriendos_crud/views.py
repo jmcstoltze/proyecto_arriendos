@@ -37,8 +37,48 @@ def bienvenido(request):
 
     return render(request, "bienvenido.html", contexto)
 
-def ver_ofertas(request):
-    return render(request, "ver_ofertas.html", {})
+def buscar_inmuebles_comuna(request, region_id):
+
+    selected_comuna = None # Comuna seleccionada por defecto
+ 
+    region = get_object_or_404(Region, pk=region_id) 
+    comunas = Comuna.objects.filter(region=region) # Obtiene las comunas de la región seleccionada
+    # Obtiene los inmuebles de dichas comunas
+    inmuebles = Inmueble.objects.filter(direccion__comuna__in=comunas, disponibilidad=True)
+
+    comuna_id = request.GET.get('comuna')
+
+    if comuna_id:
+        selected_comuna = get_object_or_404(Comuna, pk=comuna_id) # Selecciona la comuna
+        inmuebles = inmuebles.filter(direccion__comuna_id=comuna_id)
+
+    contexto = {
+        'region': region,
+        'comunas': comunas,
+        'inmuebles': inmuebles,
+        'selected_comuna': selected_comuna # Pasa la comuna al contexto
+    }
+    return render(request, "buscar_inmuebles_comuna.html", contexto)
+
+def buscar_inmuebles_region(request):
+
+    selected_region = None # Región seleccionada por defecto
+
+    regiones = Region.objects.all()
+    inmuebles = Inmueble.objects.filter(disponibilidad=True)
+
+    region_id = request.GET.get('region')
+
+    if region_id:
+        selected_region = get_object_or_404(Region, pk=region_id) # Selecciona la región
+        inmuebles = inmuebles.filter(direccion__comuna__region_id=region_id)
+
+    contexto = {
+        'regiones': regiones,
+        'inmuebles': inmuebles,
+        'selected_region': selected_region # pasa la región al contexto de la vista
+    }
+    return render(request, "buscar_inmuebles_region.html", contexto)
 
 def eliminar_inmueble(request, inmueble_id):
 
@@ -164,9 +204,6 @@ def agregar_inmueble(request):
         return redirect('bienvenido')
 
     return render(request, 'agregar_inmueble.html', {'comunas': comunas})
-
-def ofertas_disponibles(request):
-    return render(request, "ofertas_disponibles.html", {})
 
 # Vista de actualización de datos de usuario
 def datos_usuario(request):
