@@ -47,7 +47,7 @@ Se implementan vistas de registro y actualización de información de usuario, p
 
 - Usuarios 'arrendadores' y 'arrendatarios' son asignados automáticamente al grupo correspondiente en el panel de admnistración cuando se registran.
 - Usuarios 'arrendadores' pueden agregar, listar, actualizar y borrar sus inmuebles. Se implementan las vistas, rutas, funciones y formularios necesarios para ello.
-- Usuarios 'arrendatarios' pueden ver ofertas disponibles, filtrándolas por región, y luego por comuna.
+- Usuarios 'arrendatarios' pueden ver ofertas disponibles, filtrándolas por región, y luego por comuna. Se trató la funcionalidad en vistas separadas.
 - Se adjuntan pantallazos del proceso y ejemplos en la carpeta `screenshots`, en la raíz del proyecto.
 
 ### 5. Integración y pruebas finales
