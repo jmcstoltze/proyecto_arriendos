@@ -14,7 +14,7 @@ El archivo [proyecto_arriendos.jpg](proyecto_arriendos.jpg) contiene el modelo e
 
 El proyecto está dividido en 5 etapas:
 
-### 1. Registro de usuarios y gestión de datos básicos
+### 1. Entorno de desarrollo y modelo de entidades
 
 En este primer hito del proyecto, se establece la base para el desarrollo del sitio web de arriendo de inmuebles. Se configura el entorno de desarrollo integrado por Django y PostgreSQL, asegurando que el ambiente cuente con todas las herramientas necesarias para la creación del proyecto. Además, se define el modelo de datos utilizando el framework Django, representando el modelo relacional de la base de datos y estableciendo la conexión con PostgreSQL. Se implementan operaciones CRUD en los modelos para la manipulación de datos, permitiendo la creación, lectura, actualización y eliminación de registros dentro del sistema. Este hito sienta las bases técnicas necesarias para la construcción de la aplicación y garantiza que el proyecto esté listo para avanzar a etapas posteriores.
 
@@ -52,7 +52,7 @@ Se implementan vistas de registro y actualización de información de usuario, p
 
 ### 5. Integración y pruebas finales
 
-completar
+Se realizan pruebas finales y se realizan pequeñas correciones con miras a la presentación del proyecto al cliente. Lamentablemente no hubo tiempo para poder mejorar la parte visual del FrontEnd, lo cual quedará pendiente para un desarrollo posterior. Se adjunta un archivo pdf con la presentación preliminar.
 
 ## Requerimientos de Instalación
 
